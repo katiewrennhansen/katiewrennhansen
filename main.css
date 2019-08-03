@@ -1,14 +1,12 @@
-/*
-COLOR PALATTE
+/*COLOR PALATTE
 Dark Green: #0a1316
 Beige: #f0e8dd
 Black: #080510
-Mid-Green:  #6c8170
+Mid-Green:  #6c8170*/
 
-
-
-*/
-
+/*==============*/
+/*GENERAL STYLES */
+/*==============*/
 
 html {
   box-sizing: border-box;
@@ -18,13 +16,52 @@ html {
   box-sizing: inherit;
 }
 
+.home-page h1, .nav a, .logo, .h2, .about h3, .about h4, .projects h3 {
+    font-family: Oswald, sans-serif;
+    color: white;
+}
+
+.home-page, .about-content p, .projects, .card, .contact {
+    font-family: Quattrocento, serif;
+}
+
 a {
     text-decoration: none;
 }
 
-.body {
-    font-family: sans-serif;
+.main {
+    background-color: #f0e8dd;
+    text-align: center;
+    line-height: 1.35;
+    letter-spacing: 0.01em;
+    margin-top: -15vh;
 }
+
+.h2 {
+    padding: 60px 0 40px 0;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+
+.h3 {
+    font-size: 20px; 
+} 
+
+
+.h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+
+/*==============*/
+/*LANDING PAGE STYLES */
+/*==============*/
 
 .nav {
     text-align: right;
@@ -33,14 +70,11 @@ a {
 
 .nav a {
     padding: 5px;
-    font-family: Oswald, sans-serif;
-    color: white;
 }
 
 .home-page h1{
     font-size: 40px;
     margin-top: 35vh;
-    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.02rem;
 }
@@ -48,7 +82,9 @@ a {
 .landing {
     background-image: url('images/jay-mantri-TFyi0QOx08c-unsplash.jpg');
     background-position: bottom right;
-    height: 100vh;
+    background-attachment: fixed;
+    height: 112vh;
+    clip-path: polygon(0 0, 1600px 0, 1600px 115%, 0 90%);
 }
 
 .line {
@@ -62,15 +98,12 @@ a {
     position: absolute;
     padding: 10px;
     font-size: 20px;
-    font-family: Oswald, sans-serif;
-    color: white;
 }
 
 .home-page {
     margin-left: 15vw;
     line-height: 1.5;
     color: white;
-    font-family: Quattrocento, serif;
     width: 80%;
 }
 
@@ -78,23 +111,14 @@ a {
 /*==============*/
 /*ABOUT STYLES */
 /*==============*/
-.main {
-    background-color: #f0e8dd;
-    text-align: center;
-    line-height: 1.35;
-    letter-spacing: 0.01em;
-}
 
 .aboutMe {
     width: 80%;
     margin: 0 auto;
 }
 
-.h2 {
-    padding-top: 80px;
-    font-size: 30px;
-    text-align: center;
-    font-family: Oswald, sans-serif;
+.about h2 {
+    padding-top: 150px; 
 }
 
 .image {
@@ -110,24 +134,19 @@ a {
 }
 
 .about-content p {
-    margin-bottom: 15px;
-    font-family: Quattrocento, serif;
+    margin-bottom: 15px;;
 }
 
-
 .about h3 {
-    margin-top: 80px;
-    padding-top: 50px;
-    color: #f0e8dd; 
-    font-family: Oswald, sans-serif;
+    margin-top: 90px;
+    padding-top: 90px;
+    text-transform: uppercase;
+    font-size: 26px;
+    letter-spacing: 0.1rem;
 }
 
 .about h4 {
-    font-family: Oswald, sans-serif;
-}
-
-.h3 {
-    font-size: 20px; 
+    color: black;
 }
 
 .card {
@@ -137,9 +156,7 @@ a {
     background-color: #f0e8dd;
     border-radius: 2px;
     box-shadow: 3px 3px 8px black;
-    font-family: Quattrocento, serif;
 }
-
 
 .card-icon {
     font-size: 60px;
@@ -155,9 +172,13 @@ a {
 /* =============
 PROJECTS
 ============= */
-.h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
+.projects {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/forest.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 30px 0;
 }
 
 .content {
@@ -165,13 +186,8 @@ PROJECTS
     margin: 0 auto;
 }
 
-.projects {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/forest.jpg");
-    background-position: center;
-    background-size: cover;
-    font-family: Quattrocento, serif;
+.projects h2 {
     color: white;
-    padding: 30px 0;
 }
 
 .single-project {
@@ -180,7 +196,6 @@ PROJECTS
 
 .projects h3 {
     margin-bottom: 20px;
-    font-family: Oswald, sans-serif;
 }
 
 .proj-image {
@@ -199,11 +214,28 @@ PROJECTS
 /* =============
 CONTACT
 ============= */
+
+.contact {
+    padding-bottom: 50px;
+}
+.contact p {
+    padding: 10px;
+}
+
+.email a {
+    color:#0a1316;
+    font-size: 20px;
+}
+
+.email a:hover {
+    color:#6c8170;
+}
+
 .icons {
+    margin: 25px 0 30px 0;
     font-size: 30px;
     display: flex;
     justify-content: space-evenly;
-    
 }
 
 .icon-link{
@@ -212,4 +244,12 @@ CONTACT
 
 .icon-link:hover {
     color:#0a1316;
+}
+
+hr {
+    width: 80%;
+}
+
+.website {
+    margin-top: 30px;
 }
