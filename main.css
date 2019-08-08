@@ -22,7 +22,8 @@ html {
   box-sizing: inherit;
 }
 
-.home-page h1, 
+.home-page h1,
+.h1, 
 .h2, 
 .about h3, 
 .about h4, 
@@ -386,11 +387,28 @@ PROJECTS
 
 
 
-/* .projects h4 {
-    color: black;
-    font-size: 22px;
-    margin-top: 20px;
-} */
+/* =============
+INDIVIDUAL PROJECTS
+============= */
+.single-project {
+    height: 40vh;
+    background-position: center;
+}
+
+.single-project-image {
+    width: 200px;
+}
+
+.sp-icon-link {
+    color: #0a1316;
+}
+.h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
 
 
 /* =============
@@ -453,6 +471,7 @@ CONTACT
 .website {
     margin-top: 30px;
     color: gray;
+    text-align: center;
 }
 
 
