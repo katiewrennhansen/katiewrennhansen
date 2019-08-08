@@ -1,3 +1,21 @@
+//MENU FILL-IN ON SCROLL
+
+
+
+
+
+
+
+//TOGGLE NAV BUTTON SHOW
+const button = document.querySelector('button');
+const navbar = document.getElementById("navbar")
+
+button.addEventListener('click', function(){
+    navbar.classList.toggle('show-nav');
+  });
+
+
+
 
 
 
@@ -9,3 +27,4 @@ overlay.forEach(function(img){
         this.classList.toggle('show');
     }); 
 });
+
