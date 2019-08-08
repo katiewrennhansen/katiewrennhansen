@@ -13,23 +13,25 @@
 
 <body class="body">
     <header class="landing">
-        <div class="scrollbar">
-        <a class="logo" href="index.html">K</a>
-        <button class="nav-button">
-            <div class="burger-bar"></div>
-            <div class="burger-bar"></div>
-            <div class="burger-bar"></div>
-        </button>
-        <nav>
-            <ul class="nav" id="navbar">
-                <li><a href="#about">About</a></li>
-                <div class="nav-divider"></div>
-                <li><a href="#projects">Projects</a></li>
-                <div class="nav-divider"></div>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        </div>  
+        <nav class="nav">
+            <a class="logo" href="index.html">K</a>
+            <button class="nav-button">
+                <div class="burger-bar"></div>
+                <div class="burger-bar"></div>
+                <div class="burger-bar"></div>
+            </button>
+            <div class="collapse-content" id="navbar">
+                <ul class="ul">
+                    <div class="nav-divider"></div>
+                    <li><a href="#about">About</a></li>
+                    <div class="nav-divider"></div>
+                    <li><a href="#projects">Projects</a></li>
+                    <div class="nav-divider"></div>
+                    <li><a href="#contact">Contact</a></li>
+                    <div class="nav-divider"></div>
+                </ul>
+            </div>
+        </nav> 
         <section class="home-page">
             <h1>Hi, my name is <span>Katie</span></h1>
             <div class="line"></div>
@@ -50,14 +52,13 @@
             <div class="about-contaniner">
             <div class="services">
                 <h3 class="h3">Skills</h3>
-                <div>
                 <div class="row">
-                    <div class="card">
+                    <div class="card service">
                         <i class="fas fa-desktop card-icon"></i>
                         <h4 class="h4">Responsive Design</h4>
                         <p>I work to ensure that all of my work looks good on every screen size. I do this by using progressive enhancement techniques and cross browser testing.</p>
                     </div>
-                    <div class="card">
+                    <div class="card service">
                         <i class="fas fa-code card-icon"></i>
                         <h4 class="h4">Front-End Development</h4>
                         <p>I work to ensure that all of my work looks good on every screen size. I do this by using progressive enhancement techniques and cross browser testing.</p>
@@ -65,7 +66,7 @@
                 </div>
             </div>
             <div class="skills">
-                <div class="row">
+                <div class="programming row">
                     <div class="card programming-skills">
                     <h4 class="h4">Programming Skills</h4>
                         <div class="html skill">

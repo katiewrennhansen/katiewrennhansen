@@ -23,7 +23,6 @@ html {
 }
 
 .home-page h1, 
-.logo, 
 .h2, 
 .about h3, 
 .about h4, 
@@ -34,7 +33,7 @@ html {
 }
 
 .home-page, 
-.nav a, 
+.collapse-content,
 .about-content p, 
 .projects, 
 .card, 
@@ -86,11 +85,21 @@ a {
     text-shadow: 1px 1px 2px rgb(79, 79, 79);
 }
 
+
+.nav {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 55px;
+}
+
+.background-color {
+    background-color: #0a1316;
+}
+
 .logo {
     position: absolute;
-    left: 10px;
-    top: 10px;
-    padding: 10px;
+    padding: 8px;
     font-size: 40px;
     font-family: 'Julius Sans One';
     color: white;
@@ -98,8 +107,8 @@ a {
 
 .nav-button {
     position: absolute;
-    right: 25px;
-    top: 25px;
+    top: 12px;
+    right: 10px;
     background: none;
     border: none;
 }
@@ -111,41 +120,38 @@ a {
     margin: 6px 5px;
 }
 
-.nav {
-    text-align: center;
-    padding: 60px 10px 0 0;
+.collapse-content {
+    padding: 55px 0 0 0;
     display: none;
 }
 
-.nav li {
+.collapse-content li {
     padding: 10px 5px;
     text-transform: uppercase; 
+    text-align: center;
 }
 
-.nav a {
+.collapse-content a {
     color: white;
 }
 
 .nav a:hover {
     color:#addaa9;
     transition-timing-function: ease-in-out;
-    transition-duration: 400ms;
+    transition-duration: 200ms;
 }
 
 .nav-divider {
-    width: 200px;
+    width: 100vw;
     height: 1px;
-    background-color: white;
-    margin: 6px auto;
+    background-color: rgba(255, 255, 255, 0.199);
 }
 
 .show-nav {
     display: block;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
 }
-
-/* .scrollbar {
-    position: fixed;
-} */
 
 .home-page {
     margin-left: 15vw;
@@ -185,7 +191,7 @@ a {
 }
 
 .about h2 {
-    padding-top: 150px; 
+    padding-top: 250px; 
 }
 
 .about-container {
@@ -477,14 +483,30 @@ MEDIA QUERIES
 }
 @media (min-width: 768px) {
     .nav {
-        display: flex;
-        justify-content: flex-end;
+        height: 65px;
     }
     .nav-divider,
     .nav-button {
         display: none;
     }
-   
+    .collapse-content {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 30px;
+    }
+    .ul {
+        display: flex;
+    }
+    .collapse-content a {
+        font-size: 20px;
+        padding-right: 50px;
+    }
+    .transition {
+        padding-top: 20px;
+    }
+    .line {
+        width: 480px;
+    }
     .landing h1 {
         font-size: 60px;
     }
@@ -494,17 +516,6 @@ MEDIA QUERIES
     .logo {
         font-size: 40px;
         padding: 25px 0 0 50px;
-        
-    }
-    .nav a {
-        font-size: 20px;
-        padding-right: 50px;
-    }
-    .nav {
-        padding-top: 40px;
-    }
-    .line {
-        width: 480px;
     }
     .h2 {
         font-size: 40px;
@@ -515,9 +526,13 @@ MEDIA QUERIES
         width: 80%;
         margin: 15px auto;
     }
-    .row {
-        max-width: 60%;
-        margin: 0 auto;
+    .
+    .programming {
+        display: flex;
+        justify-content: space-around;
+    }
+    .skill p {
+        margin: 0;
     }
     .services h3 {
         font-size: 30px;
