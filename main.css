@@ -159,7 +159,7 @@ a {
 }
 
 .home-page-content {
-    padding-left: 15vw;
+    padding: 0 10vw 0 15vw;
 }
 
 .home-page h1{
@@ -210,7 +210,7 @@ a {
 
 .image {
     width: 250px;
-    height: 200px;
+    height: auto;
     margin: 30px auto;
     background: gray;
 }
@@ -544,24 +544,26 @@ MEDIA QUERIES
     }
 }
 @media (min-width: 768px) {
-    .nav {
-        height: 65px;
-    }
     .nav-divider,
     .nav-button {
         display: none;
     }
+    .logo {
+        font-size: 40px;
+        padding: 15px 0 0 50px;
+    }
     .collapse-content {
         display: flex;
         justify-content: flex-end;
-        padding-top: 30px;
+        align-items: flex-end;
+        padding-top: 32px;
     }
     .ul {
         display: flex;
     }
     .collapse-content a {
-        font-size: 20px;
-        padding-right: 50px;
+        font-size: 16px;
+        padding-right: 35px;
     }
     .transition {
         padding-top: 20px;
@@ -569,15 +571,11 @@ MEDIA QUERIES
     .line {
         width: 480px;
     }
-    .landing h1 {
+    .home-page h1 {
         font-size: 60px;
     }
-    .landing p {
+    .home-page p {
         font-size: 20px;
-    }
-    .logo {
-        font-size: 40px;
-        padding: 25px 0 0 50px;
     }
     .h2 {
         font-size: 40px;
@@ -588,7 +586,6 @@ MEDIA QUERIES
         width: 80%;
         margin: 15px auto;
     }
-    .
     .programming {
         display: flex;
         justify-content: space-around;
@@ -628,6 +625,19 @@ MEDIA QUERIES
     }
 }
 @media (min-width: 1200px){
+    .collapse-content {
+        padding-top: 26px;
+    }
+    .collapse-content a {
+        font-size: 18px;
+    }
+    .home-page h1 {
+        font-size: 80px;
+        padding-top: 40vh;
+    }
+    .h2 {
+        font-size: 50px;
+    }
     .row {
         display: flex;
         padding: 60px 0 100px 0;
@@ -641,5 +651,11 @@ MEDIA QUERIES
     }
     .services h4 {
         padding: 8px 0;
+    }
+    .card.programming-skills, .design-skills{
+        padding-left: 150px;
+    }
+    .resume-container {
+        padding-bottom: 50px;
     }
 }
