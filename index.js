@@ -3,13 +3,10 @@ const nav = document.querySelector('nav');
 const collapseContent = document.getElementById('navbar');
 
 document.addEventListener('scroll', function(){
-
     nav.classList.add('background-color');
+    collapseContent.classList.add('background-color');
     collapseContent.classList.add('transition');
 });
-
-
-
 
 
 
@@ -20,8 +17,6 @@ const navbar = document.getElementById("navbar")
 button.addEventListener('click', function(){
     navbar.classList.toggle('show-nav');
   });
-
-
 
 
 

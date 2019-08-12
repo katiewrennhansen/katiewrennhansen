@@ -28,7 +28,8 @@ html {
 .about h3, 
 .about h4, 
 .projects h3, 
-.projects h4 {
+.projects h4,
+.project-info h2 {
     font-family: Oswald, sans-serif;
     letter-spacing: 0.02rem;
 }
@@ -39,20 +40,14 @@ html {
 .projects, 
 .card, 
 .contact,
-.resume-download h4 {
+.resume-download h4,
+.project-info p,
+.project-info li {
     font-family: Quattrocento, serif;
 }
 
 a {
     text-decoration: none;
-}
-
-.main {
-    background-color: white;
-    text-align: center;
-    line-height: 1.35;
-    letter-spacing: 0.01em;
-    margin-top: -15vh;
 }
 
 .h2 {
@@ -75,17 +70,8 @@ a {
 
 
 /*==============*/
-/*LANDING PAGE STYLES */
+/*NAVIGATION STYLES */
 /*==============*/
-.landing {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/jay-mantri-TFyi0QOx08c-unsplash.jpg');
-    background-position: bottom right;
-    background-attachment: fixed;
-    height: 115vh;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
-    text-shadow: 1px 1px 2px rgb(79, 79, 79);
-}
-
 
 .nav {
     position: fixed;
@@ -94,7 +80,7 @@ a {
     height: 55px;
 }
 
-.background-color {
+.background-color{
     background-color: #0a1316;
 }
 
@@ -124,12 +110,14 @@ a {
 .collapse-content {
     padding: 55px 0 0 0;
     display: none;
+
 }
 
 .collapse-content li {
     padding: 10px 5px;
     text-transform: uppercase; 
     text-align: center;
+    letter-spacing: 1px;
 }
 
 .collapse-content a {
@@ -150,15 +138,28 @@ a {
 
 .show-nav {
     display: block;
-    transition-duration: 200ms;
-    transition-timing-function: ease-in-out;
+    transition: display 200ms ease-in-out;
 }
 
+
+
+/*==============*/
+/*LANDING PAGE STYLES */
+/*==============*/
+
 .home-page {
-    margin-left: 15vw;
     line-height: 1.5;
     color: white;
-    width: 80%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/jay-mantri-TFyi0QOx08c-unsplash.jpg');
+    background-position: bottom right;
+    background-attachment: fixed;
+    height: 115vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+    text-shadow: 1px 1px 2px rgb(79, 79, 79);
+}
+
+.home-page-content {
+    padding-left: 15vw;
 }
 
 .home-page h1{
@@ -179,6 +180,14 @@ a {
 /*==============*/
 /*ABOUT STYLES */
 /*==============*/
+
+.main {
+    background-color: white;
+    text-align: center;
+    line-height: 1.35;
+    letter-spacing: 0.01em;
+    margin-top: -15vh;
+}
 
 .about {
     border-bottom: 3px solid rgb(218, 217, 217);
@@ -392,23 +401,57 @@ INDIVIDUAL PROJECTS
 ============= */
 .single-project {
     height: 40vh;
-    background-position: center;
+    background-position: bottom right;
+}
+
+.project-info {
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 80px;
 }
 
 .single-project-image {
-    width: 200px;
+    width: 90%;
+    margin: 30px 0;
+}
+
+#proj-h1 {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 100px;
+    padding-top: 20vh;
+}
+
+.project-info p {
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+.project-info ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.sp-button {
+    background: #03CC85;
+    color:white;
+    border-radius: 5px;
+    padding: 7px 10px;
+    width: 46%;
+}
+
+.sp-button:hover {
+    background: #0a1316;
 }
 
 .sp-icon-link {
     color: #0a1316;
 }
-.h1 {
-    font-size: 30px;
-    text-align: center;
+
+.sp-icon-link:hover {
+    color: #addaa9;
 }
-
-
-
 
 
 /* =============
