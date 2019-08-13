@@ -51,7 +51,7 @@ a {
 }
 
 .h2 {
-    padding: 60px 0 40px 0;
+    padding: 60px 0 5px;
     font-size: 30px;
     text-align: center;
     color: black;
@@ -68,6 +68,14 @@ a {
     margin-bottom: 10px;
 }
 
+.underline {
+    width: 40px;
+    height: 6px;
+    background-color:#03CC85;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
 
 /*==============*/
 /*NAVIGATION STYLES */
@@ -82,6 +90,7 @@ a {
 
 .background-color{
     background-color: #0a1316;
+    transition-duration: 1s;
 }
 
 .logo {
@@ -110,7 +119,6 @@ a {
 .collapse-content {
     padding: 55px 0 0 0;
     display: none;
-
 }
 
 .collapse-content li {
@@ -125,7 +133,7 @@ a {
 }
 
 .nav a:hover {
-    color:#addaa9;
+    color:#03CC85;
     transition-timing-function: ease-in-out;
     transition-duration: 200ms;
 }
@@ -143,6 +151,7 @@ a {
 
 
 
+
 /*==============*/
 /*LANDING PAGE STYLES */
 /*==============*/
@@ -150,7 +159,7 @@ a {
 .home-page {
     line-height: 1.5;
     color: white;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/jay-mantri-TFyi0QOx08c-unsplash.jpg');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/jay-mantri-TFyi0QOx08c-unsplash.jpg');
     background-position: bottom right;
     background-attachment: fixed;
     height: 115vh;
@@ -170,9 +179,9 @@ a {
 }
 
 .line {
-    background-color: white;
-    height: 1px;
-    width: 85%;
+    background-color: #03CC85;
+    height: 6px;
+    width: 100px;
     margin: 8px 0;
 }
 
@@ -182,7 +191,7 @@ a {
 /*==============*/
 
 .main {
-    background-color: white;
+    background-color: rgb(250, 249, 249);
     text-align: center;
     line-height: 1.35;
     letter-spacing: 0.01em;
@@ -212,7 +221,8 @@ a {
     width: 250px;
     height: auto;
     margin: 30px auto;
-    background: gray;
+    display: flex;
+    justify-content: center;
 }
 
 .about-content {
@@ -243,15 +253,14 @@ a {
     padding: 20px;
     margin: 20px auto 40px auto;
     width: 75%;
-    background-color: white;
+    background-color: rgb(250, 249, 249);
     border-radius: 2px;
-    box-shadow: 1px 1px 5px rgb(146, 146, 146);
 }
 
 .card-icon {
     font-size: 60px;
     margin: 20px;
-    color:#6c8170;
+    color:#03CC85;
 }
 
 .services {
@@ -265,7 +274,6 @@ a {
     border-bottom: 3px solid rgb(218, 217, 217);
     margin: 0 auto;
     padding: 30px 0;
-
 }
 
 .skill {
@@ -377,14 +385,14 @@ PROJECTS
 
 .project-button {
     color: #0a1316;
-    background: #addaa9;
+    background: white;
     border-radius: 5px;
     padding: 7px 10px;
     width: 60%;
 }
 
 .project-button:hover{
-    background:white; 
+    background:#03CC85; 
     transform: scale(1.05);
     transition-timing-function: cubic-bezier(.74,4.03,.47,.9);
     transition-duration: 400ms;
@@ -412,7 +420,7 @@ INDIVIDUAL PROJECTS
 
 .single-project-image {
     width: 90%;
-    margin: 30px 0;
+    margin: 200px 0 30px 0;
 }
 
 #proj-h1 {
@@ -424,13 +432,14 @@ INDIVIDUAL PROJECTS
 
 .project-info p {
     line-height: 1.3;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .project-info ul {
     display: flex;
     justify-content: space-around;
     padding: 30px;
+    margin-bottom: 30px;
 }
 
 .sp-button {
@@ -494,7 +503,7 @@ CONTACT
 }
 
 .icon-link{
-    color:#addaa9;
+    color:#03CC85;
 }
 
 .icon-link:hover {
@@ -529,11 +538,6 @@ MEDIA QUERIES
         margin: 0 auto;
     }
 }
-@media (min-width: 560px) {
-    .line {
-        width: 380px;
-    }
-}
 @media (min-width: 650px) {
     .row {
         max-width: 70%;
@@ -550,7 +554,7 @@ MEDIA QUERIES
     }
     .logo {
         font-size: 40px;
-        padding: 15px 0 0 50px;
+        padding: 22px 0 0 50px;
     }
     .collapse-content {
         display: flex;
@@ -565,30 +569,38 @@ MEDIA QUERIES
         font-size: 16px;
         padding-right: 35px;
     }
-    .transition {
+    .transition{
         padding-top: 20px;
+        transition-duration: 0s;
+    }
+    .up {
+        padding-top: 12px;
+        transition-duration: 0s;
     }
     .line {
-        width: 480px;
+        width: 150px;
     }
     .home-page h1 {
-        font-size: 60px;
+        font-size: 70px;
     }
     .home-page p {
         font-size: 20px;
     }
     .h2 {
-        font-size: 40px;
+        font-size: 50px;
+    }
+    .underline {
+        width: 50px;
+        height: 7px;
+        background-color:#03CC85;
+        margin: 0 auto;
+        margin-bottom: 80px;
     }
     .about p {
         font-size: 18px;
         line-height: 1.35;
         width: 80%;
         margin: 15px auto;
-    }
-    .programming {
-        display: flex;
-        justify-content: space-around;
     }
     .skill p {
         margin: 0;
@@ -599,6 +611,16 @@ MEDIA QUERIES
     }
     .services h4 {
         font-size: 25px;
+    }
+    .about h4 {
+        padding: 8px 0 15px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .skill-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .content {
         width: 60%;
@@ -623,39 +645,127 @@ MEDIA QUERIES
         width: 60%;
         font-size: 35px;
     }
+    .project-info {
+        display: flex;
+        align-items: flex-end;
+        margin: 180px 0 100px 0;
+    }
+    .single-project-image {
+        width: 40%;
+        margin: 0 30px;
+    }
+    .sp-button {
+        background: #03CC85;
+        color:white;
+        border-radius: 5px;
+        padding: 12px 12px;
+        width: 40%;
+    }
 }
 @media (min-width: 1200px){
     .collapse-content {
-        padding-top: 26px;
+        padding-top: 35px;
+    }
+    .transition {
+        padding-top: 20px;
+    }
+    .logo {
+        padding: 26px 0 0 50px;
+    }
+    .up {
+        padding-top: 12px;
     }
     .collapse-content a {
         font-size: 18px;
     }
     .home-page h1 {
-        font-size: 80px;
+        font-size: 90px;
         padding-top: 40vh;
+        letter-spacing: 5px;
+    }
+    .line {
+        width: 200px;
+    }
+    .home-page p {
+        font-size: 30px;
     }
     .h2 {
-        font-size: 50px;
+        font-size: 60px;
+        padding-bottom: 0;
+    }
+    .about-content {
+        display: flex;
+        align-items: flex-start;
+    }
+    .underline {
+        width: 60px;
+        height: 8px;
+        background-color:#03CC85;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+    .about-content img {
+        width: 42%;
+        margin: 0;
+    }
+    .about-content p {
+        margin: 0 60px 20px;
+        font-size: 22px;
+    }
+    .services:first-child {
+        padding: 80px 0 0;
     }
     .row {
         display: flex;
-        padding: 60px 0 100px 0;
+        padding: 30px 0 0;
+    }
+    div.services {
+        padding-bottom: 0;
+    }
+    .service {
+        padding: 40px 0;
     }
     .card {
-        margin: 20px;
+        margin: 20px 0;
     }
     .services h3 {
-        font-size: 35px;
+        font-size: 45px;
         padding-top: 150px;
     }
-    .services h4 {
-        padding: 8px 0;
+    .about h4 {
+        font-size: 30px;
     }
-    .card.programming-skills, .design-skills{
-        padding-left: 150px;
+    h4.h4.title{
+        margin-bottom: 30px;
     }
     .resume-container {
         padding-bottom: 50px;
     }
+    .proj-image {
+        width: 400px;
+        height: 100%;;
+    }
+    .projects h3 {
+        margin-bottom: 40px;
+        font-size: 35px;
+        letter-spacing: 1px;
+    }
+    .proj-text {
+        font-size: 22px;
+        padding-bottom: 40px;
+    }
+    .project-button {
+        padding: 10px 12px;
+        width: 60%;
+    }
+    .contact div.underline {
+        margin-bottom: 40px;
+    }
+    .contact p {
+        font-size: 22px;
+    }
+    .email a {
+        font-size: 28px;
+    }
+    
 }
