@@ -22,6 +22,11 @@ html {
   box-sizing: inherit;
 }
 
+.body {
+    background-color: rgb(250, 249, 249);
+}
+
+
 .home-page h1,
 .h1, 
 .h2, 
@@ -97,7 +102,11 @@ a {
     position: absolute;
     padding: 8px;
     font-size: 40px;
-    font-family: 'Julius Sans One';
+    font-family: 'Arizonia';
+    color: white;
+}
+
+#logo:hover {
     color: white;
 }
 
@@ -159,7 +168,7 @@ a {
 .home-page {
     line-height: 1.5;
     color: white;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/jay-mantri-TFyi0QOx08c-unsplash.jpg');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/jay-mantri-TFyi0QOx08c-unsplash.jpg');
     background-position: bottom right;
     background-attachment: fixed;
     height: 115vh;
@@ -179,9 +188,9 @@ a {
 }
 
 .line {
-    background-color: #03CC85;
-    height: 6px;
-    width: 100px;
+    background-color: white;
+    height: 1px;
+    width: 300px;
     margin: 8px 0;
 }
 
@@ -191,7 +200,6 @@ a {
 /*==============*/
 
 .main {
-    background-color: rgb(250, 249, 249);
     text-align: center;
     line-height: 1.35;
     letter-spacing: 0.01em;
@@ -260,11 +268,15 @@ a {
 .card-icon {
     font-size: 60px;
     margin: 20px;
-    color:#03CC85;
+    color:#0a1316;
 }
+
 
 .services {
     padding-bottom: 50px;
+}
+.services h2 {
+    padding-top: 100px;
 }
 
 .programming-skills,
@@ -278,6 +290,10 @@ a {
 
 .skill {
     padding-bottom: 12px;
+}
+
+.serve {
+    border-bottom: 3px solid rgb(218, 217, 217);
 }
 
 .dot {
@@ -410,24 +426,31 @@ INDIVIDUAL PROJECTS
 .single-project {
     height: 40vh;
     background-position: bottom right;
+    margin-bottom: 150px;
 }
 
 .project-info {
     text-align: center;
     padding: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 150px 0 80px;
 }
 
 .single-project-image {
     width: 90%;
-    margin: 200px 0 30px 0;
+    margin: 30px;
 }
 
 #proj-h1 {
     font-size: 45px;
     text-align: center;
-    margin-bottom: 100px;
     padding-top: 20vh;
+}
+
+.proj-underline {
+    background-color: #03CC85;
+    height: 6px;
+    width: 80px;
+    margin: 2px auto;   
 }
 
 .project-info p {
@@ -454,13 +477,11 @@ INDIVIDUAL PROJECTS
     background: #0a1316;
 }
 
-.sp-icon-link {
-    color: #0a1316;
+.sp-icons {
+    padding-top: 100px;
 }
 
-.sp-icon-link:hover {
-    color: #addaa9;
-}
+
 
 
 /* =============
@@ -503,11 +524,11 @@ CONTACT
 }
 
 .icon-link{
-    color:#03CC85;
+    color:white;
 }
 
 .icon-link:hover {
-    color: white;
+    color: #03CC85;
     transform: scale(1.2);
     transition-timing-function: cubic-bezier(.74,4.03,.47,.9);
     transition-duration: 400ms;
@@ -552,6 +573,11 @@ MEDIA QUERIES
     .nav-button {
         display: none;
     }
+    .nav-line {
+        background-color: #03CC85;
+        width: 50px;
+        height: 5px;
+    }
     .logo {
         font-size: 40px;
         padding: 22px 0 0 50px;
@@ -578,7 +604,7 @@ MEDIA QUERIES
         transition-duration: 0s;
     }
     .line {
-        width: 150px;
+        width: 300px;
     }
     .home-page h1 {
         font-size: 70px;
@@ -617,6 +643,9 @@ MEDIA QUERIES
         font-size: 25px;
         text-align: center;
     }
+    div.skills {
+        padding-top: 60px;
+    }
     .skill-container {
         display: flex;
         flex-direction: column;
@@ -654,6 +683,10 @@ MEDIA QUERIES
         width: 40%;
         margin: 0 30px;
     }
+    .proj-underline {
+        width: 80px;
+        height: 7px;
+    }
     .sp-button {
         background: #03CC85;
         color:white;
@@ -684,7 +717,8 @@ MEDIA QUERIES
         letter-spacing: 5px;
     }
     .line {
-        width: 200px;
+        width: 420px;
+    
     }
     .home-page p {
         font-size: 30px;
@@ -705,12 +739,12 @@ MEDIA QUERIES
         margin-bottom: 80px;
     }
     .about-content img {
-        width: 42%;
+        width: 40%;
         margin: 0;
     }
     .about-content p {
         margin: 0 60px 20px;
-        font-size: 22px;
+        font-size: 20px;
     }
     .services:first-child {
         padding: 80px 0 0;
@@ -741,6 +775,7 @@ MEDIA QUERIES
     .resume-container {
         padding-bottom: 50px;
     }
+    /*project styles*/
     .proj-image {
         width: 400px;
         height: 100%;;
@@ -750,7 +785,12 @@ MEDIA QUERIES
         font-size: 35px;
         letter-spacing: 1px;
     }
-    .proj-text {
+     /*single project page styles*/
+    #proj-h1{
+        font-size: 90px;
+        padding-top: 150px;
+    }
+     .proj-text {
         font-size: 22px;
         padding-bottom: 40px;
     }
@@ -758,6 +798,22 @@ MEDIA QUERIES
         padding: 10px 12px;
         width: 60%;
     }
+    .project-content p {
+        font-size: 20px;
+    }
+    .project-content h2 {
+        font-size: 30px;
+        margin: 30px 0;
+    }
+    .project-content li {
+        font-size: 22px;
+    }
+    .sp-button {
+        padding: 10px 12px;
+        width: 46%;
+        font-size: 18px;
+    }
+    /*footer styles*/
     .contact div.underline {
         margin-bottom: 40px;
     }
