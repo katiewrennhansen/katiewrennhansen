@@ -4,11 +4,9 @@ this repo contains files for my personal portfolio webiste.
 
 
 to do:
-* add responsive nav animation
-* add js to click out of nav
-* add scroll nav animation
+* add animations
+* responsive spacing
 * link resume
 * add headshot
-* finalize content
-* make priject pages responsive
-
+* services content
+* clean up code, add prefixes
