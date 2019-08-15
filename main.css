@@ -26,7 +26,6 @@ html {
     background-color: rgb(250, 249, 249);
 }
 
-
 .home-page h1,
 .h1, 
 .h2, 
@@ -56,8 +55,8 @@ a {
 }
 
 .h2 {
-    padding: 60px 0 5px;
-    font-size: 30px;
+    padding: 100px 0 5px;
+    font-size: 35px;
     text-align: center;
     color: black;
     text-transform: uppercase;
@@ -65,12 +64,9 @@ a {
 }
 
 .h3 {
-    font-size: 20px; 
-} 
-
-.h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 22px;
+    letter-spacing: 0.1rem;
+    padding-bottom: 15px;
 }
 
 .underline {
@@ -100,8 +96,9 @@ a {
 
 .logo {
     position: absolute;
-    padding: 8px;
-    font-size: 40px;
+    top: 13px;
+    left: 12px;
+    font-size: 35px;
     font-family: 'Arizonia';
     color: white;
 }
@@ -166,7 +163,7 @@ a {
 /*==============*/
 
 .home-page {
-    line-height: 1.5;
+    line-height: 1.3;
     color: white;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/jay-mantri-TFyi0QOx08c-unsplash.jpg');
     background-position: bottom right;
@@ -190,7 +187,7 @@ a {
 .line {
     background-color: white;
     height: 1px;
-    width: 300px;
+    width: 210px;
     margin: 8px 0;
 }
 
@@ -208,17 +205,14 @@ a {
 
 .about {
     border-bottom: 3px solid rgb(218, 217, 217);
+    padding: 100px 0 60px;
 }
 
 .about-me {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     padding-bottom: 50px;
     border-bottom: 3px solid rgb(218, 217, 217);
-}
-
-.about h2 {
-    padding-top: 250px; 
 }
 
 .about-container {
@@ -226,15 +220,14 @@ a {
 }
 
 .image {
-    width: 250px;
+    width: 240px;
     height: auto;
     margin: 30px auto;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .about-content {
-    margin: 0 auto 20px auto;
     text-align: left;
 }
 
@@ -243,26 +236,14 @@ a {
 }
 
 .about h3 {
-    margin-top: 60px;
-    padding-top: 60px;
-    padding-bottom: 20px;
-    text-transform: uppercase;
-    font-size: 26px;
-    letter-spacing: 0.1rem;
-}
-
-.about h4 {
     color: black;
     letter-spacing: 0.1rem;
-    padding-bottom: 12px;
+    padding-bottom: 15px;
 }
 
 .card {
-    padding: 20px;
-    margin: 20px auto 40px auto;
-    width: 75%;
-    background-color: rgb(250, 249, 249);
-    border-radius: 2px;
+    margin: 40px auto;
+    width: 70%;
 }
 
 .card-icon {
@@ -271,29 +252,21 @@ a {
     color:#0a1316;
 }
 
-
-.services {
-    padding-bottom: 50px;
-}
-.services h2 {
-    padding-top: 100px;
+.serve {
+    padding-bottom: 30px;
+    border-bottom: 3px solid rgb(218, 217, 217);
 }
 
 .programming-skills,
 .design-skills {
     text-align: left;
-    box-shadow: none;
     border-bottom: 3px solid rgb(218, 217, 217);
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 60px 0;
 }
 
 .skill {
     padding-bottom: 12px;
-}
-
-.serve {
-    border-bottom: 3px solid rgb(218, 217, 217);
 }
 
 .dot {
@@ -309,7 +282,7 @@ a {
 }
 
 .resume-container {
-    margin: 50px 0;
+    margin-top: 60px;
     display: inline-block;
 }
 
@@ -319,6 +292,7 @@ a {
 
 .far {
     background-color: #03CC85;
+    font-size: 20px;
     color: white;
     padding: 15px;
     border-top-left-radius: 3px;
@@ -337,9 +311,8 @@ a {
 PROJECTS
 ============= */
 .projects {
-    padding: 30px 0 150px 0;
+    padding-bottom: 150px;
     margin: 0 auto;
-    width: 80%;
 }
 
 .proj-container {   
@@ -380,23 +353,19 @@ PROJECTS
 }
 
 .projects h3 {
-    margin-bottom: 20px;
     font-size: 26px;
-    letter-spacing: 0.08rem;
     color: white;
 }
 
 .proj-text {
     color: white;
     font-size: 16px;
-    padding-bottom: 20px;
-    font-weight: 200;
+    padding-bottom: 30px;
 }
 
 .proj-links {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .project-button {
@@ -410,14 +379,10 @@ PROJECTS
 .project-button:hover{
     background:#03CC85; 
     transform: scale(1.05);
+    transition: transform;
     transition-timing-function: cubic-bezier(.74,4.03,.47,.9);
     transition-duration: 400ms;
 }
-
-.proj-icon {
-    font-size: 36px;
-}
-
 
 
 /* =============
@@ -429,21 +394,10 @@ INDIVIDUAL PROJECTS
     margin-bottom: 150px;
 }
 
-.project-info {
-    text-align: center;
-    padding: 30px;
-    margin-bottom: 150px 0 80px;
-}
-
-.single-project-image {
-    width: 90%;
-    margin: 30px;
-}
-
 #proj-h1 {
     font-size: 45px;
     text-align: center;
-    padding-top: 20vh;
+    padding-top: 16vh;
 }
 
 .proj-underline {
@@ -451,6 +405,16 @@ INDIVIDUAL PROJECTS
     height: 6px;
     width: 80px;
     margin: 2px auto;   
+}
+
+.project-info {
+    text-align: center;
+    padding: 30px;
+}
+
+.single-project-image {
+    width: 85%;
+    margin: 20px auto;
 }
 
 .project-info p {
@@ -463,6 +427,11 @@ INDIVIDUAL PROJECTS
     justify-content: space-around;
     padding: 30px;
     margin-bottom: 30px;
+}
+
+.proj-links {
+    display: flex;
+    justify-content: space-around;
 }
 
 .sp-button {
@@ -482,8 +451,6 @@ INDIVIDUAL PROJECTS
 }
 
 
-
-
 /* =============
 CONTACT
 ============= */
@@ -496,18 +463,17 @@ CONTACT
     clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 100%);
     padding-bottom: 50px;
     color: white;
+    text-shadow: 1px 1px 1px rgb(54, 54, 54);
     
 }
 
 .contact h2 {
     color: white;
     padding-top: 200px;
-    text-shadow: 1px 1px 1px rgb(54, 54, 54);
 }
 
 .contact p {
-    padding: 10px;
-
+    padding: 15px;
 }
 
 .email a {
@@ -515,9 +481,12 @@ CONTACT
     font-size: 20px;
 }
 
+.email a:hover {
+    color: #03CC85;
+}
 
 .icons {
-    margin: 25px auto 30px auto;
+    margin: 30px auto 20px;
     font-size: 30px;
     display: flex;
     justify-content: space-evenly;
@@ -530,6 +499,7 @@ CONTACT
 .icon-link:hover {
     color: #03CC85;
     transform: scale(1.2);
+    transition-property: transform;
     transition-timing-function: cubic-bezier(.74,4.03,.47,.9);
     transition-duration: 400ms;
 }
@@ -548,39 +518,37 @@ CONTACT
 }
 
 
-
-
 /* =============
 MEDIA QUERIES
 ============= */
 @media (min-width: 470px) {
-    .row {
-        max-width: 80%;
-        margin: 0 auto;
+    .card {
+        width: 50%;
     }
 }
 @media (min-width: 650px) {
-    .row {
-        max-width: 70%;
-        margin: 0 auto;
-    }
-    .proj-image{
-        flex-direction: row;
+    .card {
+        width: 40%;
     }
 }
 @media (min-width: 768px) {
+    /*global styles*/
+    .h2 {
+        font-size: 50px;
+    }
+    .underline {
+        width: 50px;
+        height: 7px;
+        margin-bottom: 80px;
+    }
+    /*nav styles*/
     .nav-divider,
     .nav-button {
         display: none;
     }
-    .nav-line {
-        background-color: #03CC85;
-        width: 50px;
-        height: 5px;
-    }
     .logo {
         font-size: 40px;
-        padding: 22px 0 0 50px;
+        padding: 10px 0 0 40px;
     }
     .collapse-content {
         display: flex;
@@ -593,35 +561,27 @@ MEDIA QUERIES
     }
     .collapse-content a {
         font-size: 16px;
-        padding-right: 35px;
+        padding-right: 40px;
     }
     .transition{
         padding-top: 20px;
         transition-duration: 0s;
     }
     .up {
-        padding-top: 12px;
+        padding-top: 0;
         transition-duration: 0s;
     }
+    /*landing page styles*/
     .line {
-        width: 300px;
+        width: 320px;
     }
     .home-page h1 {
         font-size: 70px;
     }
     .home-page p {
-        font-size: 20px;
+        font-size: 24px;
     }
-    .h2 {
-        font-size: 50px;
-    }
-    .underline {
-        width: 50px;
-        height: 7px;
-        background-color:#03CC85;
-        margin: 0 auto;
-        margin-bottom: 80px;
-    }
+    /*about styles*/
     .about p {
         font-size: 18px;
         line-height: 1.35;
@@ -631,16 +591,9 @@ MEDIA QUERIES
     .skill p {
         margin: 0;
     }
-    .services h3 {
-        font-size: 30px;
-        margin-bottom: 50px;
-    }
-    .services h4 {
-        font-size: 25px;
-    }
-    .about h4 {
-        padding: 8px 0 15px;
-        font-size: 25px;
+    h3.title {
+        font-size: 28px;
+        padding-bottom: 30px;
         text-align: center;
     }
     div.skills {
@@ -651,29 +604,15 @@ MEDIA QUERIES
         flex-direction: column;
         align-items: center;
     }
-    .content {
-        width: 60%;
-        margin: 0 auto;
-    }
+    /*project styles*/
     .projects p {
-        font-size: 18px;
-        margin-bottom: 15px;
-    }
-    .project-button {
-        width: 160px;
-    }
-    .contact p {
         font-size: 18px;
         margin-bottom: 10px;
     }
-    .email a {
-        font-size: 22px;
+    .project-button {
+        width: 70%;
     }
-    .icons {
-        margin-top: 35px;
-        width: 60%;
-        font-size: 35px;
-    }
+     /*single project styles*/
     .project-info {
         display: flex;
         align-items: flex-end;
@@ -688,14 +627,37 @@ MEDIA QUERIES
         height: 7px;
     }
     .sp-button {
-        background: #03CC85;
-        color:white;
         border-radius: 5px;
-        padding: 12px 12px;
-        width: 40%;
+        padding: 8px 10px;
+    }
+    /*contact styles*/
+    .contact p {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .email a {
+        font-size: 22px;
+    }
+    .icons {
+        margin-top: 35px;
+        width: 60%;
+        font-size: 35px;
     }
 }
 @media (min-width: 1200px){
+    /*global styles*/
+    .h2 {
+        font-size: 60px;
+        padding-bottom: 0;
+    }
+    .h3 {
+        font-size: 45px;
+    }
+    .underline {
+        width: 60px;
+        height: 8px;
+    }
+    /*nav styles*/
     .collapse-content {
         padding-top: 35px;
     }
@@ -703,40 +665,34 @@ MEDIA QUERIES
         padding-top: 20px;
     }
     .logo {
-        padding: 26px 0 0 50px;
+        padding: 18px 0 0 50px;
     }
     .up {
-        padding-top: 12px;
+        padding-top: 2px;
     }
     .collapse-content a {
         font-size: 18px;
     }
+    /*home page styles*/
     .home-page h1 {
         font-size: 90px;
         padding-top: 40vh;
-        letter-spacing: 5px;
     }
     .line {
-        width: 420px;
-    
+        width: 410px;
     }
     .home-page p {
-        font-size: 30px;
+        font-size: 32px;
     }
-    .h2 {
-        font-size: 60px;
-        padding-bottom: 0;
+    /*about styles*/
+    .about-me {
+        margin: 0 auto;
+        width: 100%;
+        width: 80%;
     }
     .about-content {
         display: flex;
         align-items: flex-start;
-    }
-    .underline {
-        width: 60px;
-        height: 8px;
-        background-color:#03CC85;
-        margin: 0 auto;
-        margin-bottom: 80px;
     }
     .about-content img {
         width: 40%;
@@ -751,10 +707,13 @@ MEDIA QUERIES
     }
     .row {
         display: flex;
-        padding: 30px 0 0;
+        margin: 0 auto;
+        width: 80%;
     }
-    div.services {
-        padding-bottom: 0;
+    .programming-skills, 
+    .design-skills {
+        margin: 0 auto;
+        width: 80%;
     }
     .service {
         padding: 40px 0;
@@ -762,18 +721,8 @@ MEDIA QUERIES
     .card {
         margin: 20px 0;
     }
-    .services h3 {
-        font-size: 45px;
-        padding-top: 150px;
-    }
-    .about h4 {
-        font-size: 30px;
-    }
-    h4.h4.title{
-        margin-bottom: 30px;
-    }
     .resume-container {
-        padding-bottom: 50px;
+        padding-bottom: 30px;
     }
     /*project styles*/
     .proj-image {
@@ -781,22 +730,20 @@ MEDIA QUERIES
         height: 100%;;
     }
     .projects h3 {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         font-size: 35px;
         letter-spacing: 1px;
+    }
+    .project-button {
+        padding: 10px 12px;
     }
      /*single project page styles*/
     #proj-h1{
         font-size: 90px;
-        padding-top: 150px;
     }
-     .proj-text {
+    .proj-text {
         font-size: 22px;
         padding-bottom: 40px;
-    }
-    .project-button {
-        padding: 10px 12px;
-        width: 60%;
     }
     .project-content p {
         font-size: 20px;
@@ -810,13 +757,9 @@ MEDIA QUERIES
     }
     .sp-button {
         padding: 10px 12px;
-        width: 46%;
         font-size: 18px;
     }
-    /*footer styles*/
-    .contact div.underline {
-        margin-bottom: 40px;
-    }
+    /*contact styles*/
     .contact p {
         font-size: 22px;
     }
