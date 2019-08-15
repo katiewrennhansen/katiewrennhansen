@@ -7,5 +7,4 @@ to do:
 * add animations
 * link resume
 * add headshot
-* services content
 * add prefixes
