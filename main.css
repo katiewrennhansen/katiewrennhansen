@@ -264,20 +264,27 @@ a {
     width: 70%;
 }
 
+.service {
+    background-color:rgb(250, 249, 249);
+    box-shadow: 1px 1px 5px rgb(235, 235, 235);
+    padding: 30px;
+}
+
 .card-icon {
     font-size: 60px;
     margin: 20px;
+    color: #0a1316;
 }
 
 .serve {
     padding-bottom: 120px;
-    border-bottom: 3px solid rgb(218, 217, 217);
+    border-bottom: 2px solid rgb(218, 217, 217);
 }
 
 .programming-skills,
 .design-skills {
     text-align: left;
-    border-bottom: 3px solid rgb(218, 217, 217);
+    border-bottom: 2px solid rgb(218, 217, 217);
     margin: 0 auto;
     padding: 60px 0;
 }
@@ -291,7 +298,7 @@ a {
     height: 12px;
     border-radius: 50%;
     display: inline-block;
-    background-color: black;
+    background-color: #0a1316;
 }
 
 .gray {
@@ -743,11 +750,12 @@ MEDIA QUERIES
         padding-bottom: 0;
     }
     .h3 {
-        font-size: 35px;
+        font-size: 30px;
     }
     .underline {
         width: 60px;
         height: 8px;
+        margin-bottom: 100px;
     }
     /*nav styles*/
     .collapse-content {
