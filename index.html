@@ -14,7 +14,7 @@
 
 <body class="body">
     <header>
-        <nav class="nav" id="nav">
+        <nav class="nav hidden" id="nav">
             <a class="logo" id="logo" href="index.html">KatieHansen</a>
             <button class="nav-button">
                 <div class="burger-bar"></div>
@@ -38,9 +38,9 @@
             </div>
         </nav> 
         <section class="home-page" id="home-page">
-            <div class="home-page-content">
+            <div class="home-page-content hidden">
                 <h1>Hi, I'm <span>Katie</span></h1>
-                <div class="line"></div>
+                <div class="line" id="line"></div>
                 <p>I'm a creative web developer.</p>
             </div>
         </section>
@@ -311,7 +311,10 @@
         </section>
 
     </main>
-    
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
     <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

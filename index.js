@@ -4,6 +4,7 @@ const logo = document.querySelector('.logo');
 const button = document.querySelector('button');
 const navbar = document.getElementById("navbar");
 const homePage = document.getElementById("home-page");
+const content = document.getElementById("line");
 const main = document.querySelector('main');
 const overlay = document.querySelectorAll('.overlay');
 
@@ -24,6 +25,17 @@ function scrollBehavior() {
         }
     });
 }
+
+
+$(document).ready(function() {
+    // $('h1.hidden').fadeIn(1800).removeClass('hidden');
+    // $('p.hidden').fadeIn(1800).removeClass('hidden');
+    $('div.hidden').fadeIn(1800).removeClass('hidden');
+    $('nav.hidden').fadeIn(1800).removeClass('hidden');
+
+    
+
+});
 
  
 

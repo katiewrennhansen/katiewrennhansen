@@ -191,12 +191,19 @@ a {
     letter-spacing: 0.02rem;
 }
 
+.hidden {
+    display: none;
+}
+
 .line {
     background-color: white;
     height: 1px;
-    width: 210px;
     margin: 8px 0;
+    animation: 1200ms ease-in-out slide-mobile;
+    width: 210px;
 }
+
+
 
 
 /*==============*/
@@ -230,10 +237,13 @@ a {
 .image {
     width: 240px;
     height: auto;
-    margin: 30px auto;
+    margin: 20px auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 88%);
+            clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 88%);
+    border-radius: 5px;
 }
 
 .about-content {
@@ -266,6 +276,7 @@ a {
 
 .service {
     background-color:rgb(250, 249, 249);
+    border-bottom: 3px solid #03CC85;
     box-shadow: 1px 1px 5px rgb(235, 235, 235);
     padding: 30px;
 }
@@ -278,7 +289,6 @@ a {
 
 .serve {
     padding-bottom: 120px;
-    border-bottom: 2px solid rgb(218, 217, 217);
 }
 
 .programming-skills,
@@ -286,7 +296,7 @@ a {
     text-align: left;
     border-bottom: 2px solid rgb(218, 217, 217);
     margin: 0 auto;
-    padding: 60px 0;
+    padding-bottom: 60px;
 }
 
 .skill {
@@ -592,6 +602,38 @@ CONTACT
 
 
 /* =============
+KEYFRAMES
+============= */
+
+@keyframes slide-mobile{
+    0% {
+        background-color: rgba(255, 255, 255, 0);
+        width: 0;
+    }
+    100% {
+        width: 210px;
+    }
+}
+@keyframes slide-medium{
+    0% {
+        background-color: rgba(255, 255, 255, 0);
+        width: 0;
+    }
+    100% {
+        width: 320px;
+    }
+}
+@keyframes slide-desktop{
+    0% {
+        background-color: rgba(255, 255, 255, 0);
+        width: 0;
+    }
+    100% {
+        width: 410px;   
+    }
+}
+
+/* =============
 MEDIA QUERIES
 ============= */
 @media (min-width: 470px) {
@@ -659,6 +701,8 @@ MEDIA QUERIES
     /*landing page styles*/
     .line {
         width: 320px;
+        animation: 1200ms ease-in-out 300ms slide-medium;
+
     }
     .home-page h1 {
         font-size: 70px;
@@ -685,7 +729,7 @@ MEDIA QUERIES
         text-align: center;
     }
     div.skills {
-        padding-top: 60px;
+        padding-top: 50px;
     }
     .skill-container {
         display: -webkit-box;
@@ -781,6 +825,8 @@ MEDIA QUERIES
     }
     .line {
         width: 410px;
+        animation: 1200ms ease-in-out slide-desktop;
+
     }
     .home-page p {
         font-size: 32px;
