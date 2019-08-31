@@ -44,7 +44,9 @@ html {
 .contact,
 .resume-download h4,
 .project-info p,
-.project-info li {
+.project-info li,
+a.sp-button,
+.resume-download span {
     font-family: Quattrocento, serif;
 }
 
@@ -243,7 +245,6 @@ a {
     display: flex;
     -webkit-clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 88%);
             clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 88%);
-    border-radius: 5px;
 }
 
 .about-content {
@@ -297,6 +298,10 @@ a {
     border-bottom: 2px solid rgb(218, 217, 217);
     margin: 0 auto;
     padding-bottom: 60px;
+}
+
+.design-skills {
+    padding-top: 60px;
 }
 
 .skill {
@@ -445,9 +450,6 @@ PROJECTS
 /* =============
 INDIVIDUAL PROJECTS
 ============= */
-/* .proj-nav {
-     background-color: #0a1316;
-} */
 
 .single-project {
     height: 40vh;
@@ -826,7 +828,6 @@ MEDIA QUERIES
     .line {
         width: 410px;
         animation: 1200ms ease-in-out slide-desktop;
-
     }
     .home-page p {
         font-size: 32px;
@@ -870,6 +871,9 @@ MEDIA QUERIES
     }
     .service {
         margin: 0 30px;
+    }
+    .design-skills {
+        padding-top: 0;
     }
     .resume-container {
         padding-bottom: 30px;
