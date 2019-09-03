@@ -6,8 +6,8 @@ const navbar = document.getElementById("navbar");
 const homePage = document.getElementById("home-page");
 const content = document.getElementById("line");
 const main = document.querySelector('main');
+const projects = document.querySelectorAll('.single-proj');
 const overlay = document.querySelectorAll('.overlay');
-
 
 
 
@@ -50,6 +50,15 @@ function navToggle(){
     });
 }
 
+function navFocus(){
+    button.addEventListener('focus', function(){
+        navbar.classList.toggle('show-nav');
+      });
+    button.addEventListener('blur', function(){
+        navbar.classList.remove('show-nav');
+    });
+}
+
 
 
 
@@ -58,9 +67,24 @@ function overlayClick(){
     overlay.forEach(function(img){
         img.addEventListener('click', function(){
             this.classList.toggle('show');
-        }); 
+        });
     }); 
 }
+
+function overlayFocus(){
+    const projBtn = document.querySelectorAll('.project-button');
+
+    for (let i = 0; i < projects.length; i++){
+        projBtn[i].addEventListener('focus', function(){
+            overlay[i].classList.add('show');
+        });   
+        projBtn[i].addEventListener('blur', function(){
+            overlay[i].classList.remove('show');
+        });                
+       
+    }
+}
+
 
 
 
@@ -69,8 +93,11 @@ function callAllFuntions(){
     homePageFade();
     scrollBehavior();
     navToggle();
+    navFocus();
     overlayClick();
+    overlayFocus();
+    iconLinkFocus();
 }
 
 
-callAllFuntions();
+callAllFuntions();          
