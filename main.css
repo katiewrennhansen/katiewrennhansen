@@ -1,4 +1,4 @@
-/*COLOR PALATTE
+/* /*COLOR PALATTE
 Dark Green: #0a1316
 Bright-Green: #03CC85
 */
@@ -16,7 +16,7 @@ html {
 *:before, 
 *:after {
   box-sizing: inherit;
-}
+} 
 
 .body {
     background-color: rgb(250, 249, 249);
@@ -94,6 +94,11 @@ a {
     transition-duration: 1s;
 }
 
+.nav-background {
+    background-color: #0a1316;
+    transition-duration: 0s;
+}
+
 .logo {
     position: absolute;
     top: 13px;
@@ -124,15 +129,51 @@ a {
     height: 3px;
     background-color: white;
     margin: 6px 5px;
+    transition-duration: 300ms;
 }
 
-.collapse-content {
-    padding: 55px 0 0 0;
+.cross > #bb-two {
     display: none;
 }
 
+.cross > #bb-one {
+    transform: rotate(45deg) translate(6px, 7px);
+    width: 30px;
+    transition-duration: 300ms;
+}
+
+.cross > #bb-three {
+    transform: rotate(-45deg);
+    width: 30px;
+    transition-duration: 300ms;
+}
+
+.collapse-content {
+    height: 0;
+    background: #0a1316;
+    padding: 0 20px 0;
+    transition-duration: 400ms;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: 55px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.03em;
+} 
+
+.toggle {
+    height: 100vh;
+    transition-duration: 300ms;
+    opacity: 1;
+}
+
+
+.collapse-content ul {
+    padding: 60px 0 0 0;
+}
+
 .collapse-content li {
-    padding: 10px 5px;
+    padding: 50px 0 10px 0;
     text-transform: uppercase; 
     text-align: center;
     letter-spacing: 1px;
@@ -157,9 +198,10 @@ a {
 }
 
 .nav-divider {
-    width: 100vw;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.199);
+    width: 6vw;
+    margin: 0 auto;
+    height: 4px;
+    background-color: #03CC85;
 }
 
 .show-nav {
@@ -400,11 +442,11 @@ PROJECTS
     padding: 40px 20px;
 }
 
-.show {
+.single-proj:hover .overlay {
     opacity: 1;
 }
 
-.single-proj:hover .overlay {
+.show {
     opacity: 1;
 }
 
@@ -431,7 +473,7 @@ PROJECTS
 .project-button {
     color: #0a1316;
     background: white;
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 7px 10px;
     width: 60%;
 }
@@ -517,7 +559,7 @@ INDIVIDUAL PROJECTS
 .sp-button {
     background: #0a1316;
     color:white;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 7px 10px;
     width: 46%;
 }
@@ -691,6 +733,9 @@ MEDIA QUERIES
     .nav-button {
         display: none;
     }
+    nav {
+        display: flex;
+    }
     .logo {
         font-size: 40px;
         padding: 10px 0 0 30px;
@@ -706,6 +751,13 @@ MEDIA QUERIES
             -ms-flex-align: end;
                 align-items: flex-end;
         padding-top: 32px;
+        height: 60px;
+        transform: translateX(0px);
+        transition-duration: 0ms;
+        opacity: 1;
+        margin: 0;
+        background-color: rgba(255, 255, 255, 0);
+        font-family: 'Quattrocento', serif;
     }
     .ul {
         display: -webkit-box;
@@ -714,19 +766,21 @@ MEDIA QUERIES
     }
     .collapse-content a {
         font-size: 16px;
-        padding-right: 25px;
+    }
+    .collapse-content li {
+        padding: 0 22px 0 0;
     }
     .transition{
-        padding-top: 20px;
+        padding-bottom: 12px;
         -webkit-transition-duration: 0s;
              -o-transition-duration: 0s;
-                transition-duration: 0s;
+                transition-duration: 200ms;
     }
     .up {
         padding-top: 0;
         -webkit-transition-duration: 0s;
              -o-transition-duration: 0s;
-                transition-duration: 0s;
+                transition-duration: 200ms;
     }
     /*landing page styles*/
     .line {
@@ -781,6 +835,7 @@ MEDIA QUERIES
     .project-button {
         width: 70%;
     }
+  
      /*single project styles*/
     .project-info {
         display: -webkit-box;
@@ -791,6 +846,7 @@ MEDIA QUERIES
               align-items: flex-end;
         margin: 180px 0 100px 0;
     }
+
     .single-project-image {
         width: 40%;
         margin: 0 30px;
@@ -800,7 +856,6 @@ MEDIA QUERIES
         height: 7px;
     }
     .sp-button {
-        border-radius: 5px;
         padding: 8px 10px;
     }
     /*contact styles*/
@@ -839,7 +894,7 @@ MEDIA QUERIES
         padding-top: 20px;
     }
     .logo {
-        padding: 18px 0 0 50px;
+        padding: 15px 0 0 50px;
     }
     .up {
         padding-top: 2px;
