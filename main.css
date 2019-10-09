@@ -83,15 +83,10 @@ a {
 /*==============*/
 
 .nav {
-    position: fixed;
+    position: absolute;
     z-index: 9999;
     width: 100%;
     height: 55px;
-}
-
-.background-color{
-    background-color: #0a1316;
-    transition-duration: 1s;
 }
 
 .nav-background {
@@ -169,7 +164,7 @@ a {
 
 
 .collapse-content ul {
-    padding: 60px 0 0 0;
+    padding: 40px 0 0 0;
 }
 
 .collapse-content li {
@@ -274,10 +269,9 @@ a {
 }
 
 .about-me {
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
     padding-bottom: 50px;
-
 }
 
 .about-container {
@@ -287,7 +281,7 @@ a {
 }
 
 .image {
-    width: 240px;
+    max-width: 280px;
     height: auto;
     margin: 20px auto;
     display: -webkit-box;
@@ -299,6 +293,8 @@ a {
 
 .about-content {
     text-align: left;
+    line-height: 1.5;
+    font-size: 17px;
 }
 
 .about-content p {
@@ -317,7 +313,7 @@ a {
 
 .services-content {
     padding-bottom: 60px;
-    background: rgb(244, 244, 244);
+    background: rgb(245, 245, 245);
 }
 
 .card {
@@ -328,8 +324,13 @@ a {
 .service {
     background-color:rgb(250, 249, 249);
     border-bottom: 3px solid #03CC85;
-    box-shadow: 1px 1px 5px rgb(235, 235, 235);
+    box-shadow: 1px 1px 5px rgb(203, 203, 203);
     padding: 30px;
+    border-radius: 3px;
+    max-width: 350px;
+    line-height: 1.5;
+    font-size: 17px;
+    width: 85%;
 }
 
 .card-icon {
@@ -406,7 +407,9 @@ PROJECTS
     margin: 0 auto;
 }
 
-.proj-container {   
+.proj-container { 
+    width: 90%;
+    margin: 0 auto;
     display: -webkit-box;   
     display: -ms-flexbox;   
     display: flex;
@@ -457,8 +460,9 @@ PROJECTS
 
 .proj-text {
     color: white;
-    font-size: 16px;
+    font-size: 17px;
     padding-bottom: 30px;
+    line-height: 1.5;
 }
 
 .proj-links {
@@ -615,6 +619,7 @@ CONTACT
 
 .contact p {
     padding: 15px;
+    font-size: 17px;
 }
 
 .email a {
@@ -624,6 +629,7 @@ CONTACT
 
 .email a:hover, .email a:focus {
     color: #03CC85;
+    transition: 300ms linear 10ms;
 }
 
 .icons {
@@ -677,7 +683,7 @@ CONTACT
 KEYFRAMES
 ============= */
 
-@keyframes slide-mobile{
+/* @keyframes slide-mobile{
     0% {
         background-color: rgba(255, 255, 255, 0);
         width: 0;
@@ -703,19 +709,19 @@ KEYFRAMES
     100% {
         width: 410px;   
     }
-}
+} */
 
 /* =============
 MEDIA QUERIES
 ============= */
 @media (min-width: 470px) {
     .card {
-        width: 50%;
+        width: 550px;
     }
-}
-@media (min-width: 650px) {
-    .card {
-        width: 40%;
+    .programming-skills,
+    .design-skills{
+        margin: 40px auto;
+        width: 60%;
     }
 }
 @media (min-width: 768px) {
@@ -750,7 +756,7 @@ MEDIA QUERIES
         -webkit-box-align: end;
             -ms-flex-align: end;
                 align-items: flex-end;
-        padding-top: 32px;
+        /* padding-top: 32px; */
         height: 60px;
         transform: translateX(0px);
         transition-duration: 0ms;
@@ -769,18 +775,6 @@ MEDIA QUERIES
     }
     .collapse-content li {
         padding: 0 22px 0 0;
-    }
-    .transition{
-        padding-bottom: 12px;
-        -webkit-transition-duration: 0s;
-             -o-transition-duration: 0s;
-                transition-duration: 200ms;
-    }
-    .up {
-        padding-top: 0;
-        -webkit-transition-duration: 0s;
-             -o-transition-duration: 0s;
-                transition-duration: 200ms;
     }
     /*landing page styles*/
     .line {
@@ -887,18 +881,17 @@ MEDIA QUERIES
         margin-bottom: 100px;
     }
     /*nav styles*/
-    .collapse-content {
-        padding-top: 35px;
+    .collapse-content ul {
+        padding-top: 0px;
+        margin-top: 60px;
     }
-    .transition {
-        padding-top: 20px;
+    .collapse-content {
+        margin-top: 5px;
     }
     .logo {
         padding: 15px 0 0 50px;
     }
-    .up {
-        padding-top: 2px;
-    }
+
     .collapse-content a {
         font-size: 18px;
         padding-right: 40px;

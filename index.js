@@ -13,20 +13,6 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 
 
-//MENU FILL-IN ON SCROLL
-function scrollBehavior(){
-    if (window.pageYOffset > 10){
-        nav.classList.add('background-color');
-        navbar.classList.add('transition', 'background-color');
-        logo.classList.add('up');
-    } else {
-        nav.classList.remove('background-color');
-        navbar.classList.remove('transition', 'background-color');
-        logo.classList.remove('up');
-    }
-}
-
-
 function homePageFade(){
     $(document).ready(function() {
         $('div.hidden').fadeIn(1800).removeClass('hidden');
@@ -46,6 +32,7 @@ function toggleNav(){
 function removeNav(){
     collapse.classList.remove('toggle');
     button.classList.remove('cross');
+    nav.classList.remove('nav-background');
 }
 
 
@@ -75,7 +62,6 @@ function overlayFocus(){
 
 
 //ADD EVENT LISTENERS
-window.addEventListener('scroll', scrollBehavior);
 button.addEventListener('click', toggleNav);
 main.addEventListener('click', removeNav);
 homePage.addEventListener('click', removeNav);
