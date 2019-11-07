@@ -220,7 +220,7 @@ a {
     background: -o-linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/jay-mantri-TFyi0QOx08c-unsplash.jpg');
     background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/jay-mantri-TFyi0QOx08c-unsplash.jpg');
     background-position: bottom right;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     height: 115vh;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
@@ -348,12 +348,9 @@ a {
     text-align: left;
     border-bottom: 2px solid rgb(218, 217, 217);
     margin: 0 auto;
-    padding-bottom: 60px;
+    padding: 60px 0;
 }
 
-.design-skills {
-    padding-top: 60px;
-}
 
 .skill {
     padding-bottom: 12px;
@@ -694,6 +691,9 @@ CONTACT
 MEDIA QUERIES
 ============= */
 @media (min-width: 470px) {
+    .home-page{
+        background-attachment: fixed;
+    }
     .card {
         width: 550px;
     }
@@ -921,6 +921,9 @@ MEDIA QUERIES
         display: flex;
         justify-content: center;
         margin: 0 50px;
+    }
+    .programming-skills {
+        padding-top: 0px;
     }
     .programming-skills, 
     .design-skills {
