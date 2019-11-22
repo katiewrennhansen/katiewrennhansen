@@ -13,12 +13,12 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 
 
-function homePageFade(){
-    $(document).ready(function() {
-        $('div.hidden').fadeIn(1800).removeClass('hidden');
-        $('nav.hidden').fadeIn(1800).removeClass('hidden');
-    });
-}
+// function homePageFade(){
+//     $(document).ready(function() {
+//         $('div.hidden').fadeIn(1800).removeClass('hidden');
+//         $('nav.hidden').fadeIn(1800).removeClass('hidden');
+//     });
+// }
 
 
 //TOGGLE NAV 

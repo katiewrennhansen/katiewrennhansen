@@ -1,0 +1,400 @@
+/*==============*/
+/*GENERAL STYLES */
+/*==============*/
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  *, 
+  *:before, 
+  *:after {
+    box-sizing: inherit;
+  } 
+  
+  .body {
+      background-color: rgb(250, 249, 249);
+  }
+  
+  .home-page h1,
+  .h1, 
+  .h2, 
+  .about h3, 
+  .about h4, 
+  .services-content h3, 
+  .services-content h4,
+  .projects h3, 
+  .projects h4,
+  .project-info h2 {
+      font-family: Oswald, sans-serif;
+      letter-spacing: 0.02rem;
+  }
+  
+  .home-page, 
+  .collapse-content,
+  .about-content p, 
+  .projects, 
+  .card, 
+  .contact,
+  .resume-download h4,
+  .project-info p,
+  .project-info li,
+  a.sp-button,
+  .resume-download span {
+      font-family: Quattrocento, serif;
+  }
+  
+  a {
+      text-decoration: none;
+  }
+  
+  .h2 {
+      padding: 100px 0 5px;
+      font-size: 35px;
+      text-align: center;
+      color: black;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+  }
+  
+  .h3 {
+      font-size: 22px;
+      letter-spacing: 0.1rem;
+      padding-bottom: 15px;
+  }
+  
+  .underline {
+      width: 40px;
+      height: 6px;
+      background-color:#03CC85;
+      margin: 0 auto;
+      margin-bottom: 50px;
+  }
+  
+  
+  /*==============*/
+  /*NAVIGATION STYLES */
+  /*==============*/
+  
+  .nav {
+      position: absolute;
+      z-index: 9999;
+      width: 100%;
+      height: 55px;
+      animation: 500ms ease-out 0s 1 slideDown;
+  
+  }
+  
+  .nav-background {
+      background-color: #0a1316;
+      transition-duration: 0s;
+  }
+  
+  .logo {
+      position: absolute;
+      top: 13px;
+      left: 12px;
+      font-size: 35px;
+      font-family: 'Arizonia';
+      color: white;
+  }
+  
+  #logo:hover {
+      color: white;
+  }
+  
+  #logo:focus {
+      color: white;
+  }
+  
+  .nav-button {
+      position: absolute;
+      top: 12px;
+      right: 10px;
+      background: none;
+      border: none;
+  }
+  
+  .burger-bar {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 5px;
+      transition-duration: 300ms;
+  }
+  
+  .cross > #bb-two {
+      display: none;
+  }
+  
+  .cross > #bb-one {
+      transform: rotate(45deg) translate(6px, 7px);
+      width: 30px;
+      transition-duration: 300ms;
+  }
+  
+  .cross > #bb-three {
+      transform: rotate(-45deg);
+      width: 30px;
+      transition-duration: 300ms;
+  }
+  
+  .collapse-content {
+      height: 0;
+      background: #0a1316;
+      padding: 0 20px 0;
+      transition-duration: 400ms;
+      opacity: 0;
+      overflow: hidden;
+      margin-top: 55px;
+      font-family: 'Quattrocento', sans-serif;
+      font-size: 25px;
+      letter-spacing: 0.03em;
+  } 
+  
+  .toggle {
+      height: 100vh;
+      transition-duration: 300ms;
+      opacity: 1;
+  }
+  
+  
+  .collapse-content ul {
+      padding: 40px 0 0 0;
+  }
+  
+  .collapse-content li {
+      padding: 50px 0 10px 0;
+      text-transform: uppercase; 
+      text-align: center;
+      letter-spacing: 1px;
+  }
+  
+  .collapse-content a {
+      color: white;
+  }
+  
+  .nav a:hover {
+      color:#03CC85; 
+      -webkit-transition-timing-function: ease-in-out;
+           -o-transition-timing-function: ease-in-out;
+              transition-timing-function: ease-in-out;
+      -webkit-transition-duration: 200ms;
+           -o-transition-duration: 200ms;
+              transition-duration: 200ms;
+  }
+  
+  .nav a:focus {
+      color: #03CC85;
+  }
+  
+  .nav-divider {
+      width: 6vw;
+      margin: 0 auto;
+      height: 4px;
+      background-color: #03CC85;
+  }
+  
+  .show-nav {
+      display: block;
+      -webkit-transition: display 200ms ease-in-out;
+           -o-transition: display 200ms ease-in-out;
+              transition: display 200ms ease-in-out;
+  }
+  
+
+  
+
+/* =============
+CONTACT
+============= */
+
+
+  .contact {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.78)), to(rgba(0, 0, 0, 0.78))), url("images/forest.jpg");
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), url("images/forest.jpg");
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), url("images/forest.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 100%);
+    padding-bottom: 50px;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(54, 54, 54);
+}
+
+.contact h2 {
+    color: white;
+    padding-top: 200px;
+}
+
+.contact p {
+    padding: 15px;
+    font-size: 17px;
+}
+
+.email a {
+    color:white;
+    font-size: 20px;
+}
+
+.email a:hover, .email a:focus {
+    color: #03CC85;
+    transition: 300ms linear 10ms;
+}
+
+.icons {
+    margin: 30px auto 20px;
+    font-size: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+.icon-link{
+    color:white;
+}
+
+.icon-link:hover{
+    color: #03CC85;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-timing-function: cubic-bezier(.74,4.03,.47,.9);
+         -o-transition-timing-function: cubic-bezier(.74,4.03,.47,.9);
+            transition-timing-function: cubic-bezier(.74,4.03,.47,.9);
+    -webkit-transition-duration: 400ms;
+         -o-transition-duration: 400ms;
+            transition-duration: 400ms;
+}
+
+.bottom-line {
+    height: 1px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(128, 128, 128, 0.434);
+}
+
+.website {
+    margin-top: 30px;
+    color: gray;
+    text-align: center;
+}
+
+
+
+
+@media (min-width: 768px) {
+    /*global styles*/
+    .h2 {
+        font-size: 50px;
+    }
+    .underline {
+        width: 50px;
+        height: 7px;
+        margin-bottom: 80px;
+    }
+    /*nav styles*/
+    .nav-divider,
+    .nav-button {
+        display: none;
+    }
+    nav {
+        display: flex;
+    }
+    .logo {
+        font-size: 40px;
+        padding: 10px 0 0 30px;
+    }
+    .collapse-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        /* padding-top: 32px; */
+        height: 60px;
+        transform: translateX(0px);
+        transition-duration: 0ms;
+        opacity: 1;
+        margin: 0;
+        background-color: rgba(255, 255, 255, 0);
+        font-family: 'Quattrocento', serif;
+    }
+    .ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .collapse-content a {
+        font-size: 16px;
+    }
+    .collapse-content li {
+        padding: 0 22px 0 0;
+    }
+    /*contact styles*/
+    .contact p {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .email a {
+        font-size: 22px;
+    }
+    .icons {
+        margin-top: 35px;
+        width: 60%;
+        font-size: 35px;
+    }
+}
+@media (min-width: 1200px){
+    /*global styles*/
+    .h2 {
+        font-size: 60px;
+        padding-bottom: 0;
+    }
+    .h3 {
+        font-size: 30px;
+    }
+    .underline {
+        width: 60px;
+        height: 8px;
+        margin-bottom: 100px;
+    }
+    /*nav styles*/
+    .collapse-content ul {
+        padding-top: 0px;
+        margin-top: 60px;
+    }
+    .collapse-content {
+        margin-top: 5px;
+    }
+    .logo {
+        padding: 15px 0 0 50px;
+    }
+    .collapse-content a {
+        font-size: 18px;
+        padding-right: 40px;
+    }
+     /*contact styles*/
+     .contact p {
+        font-size: 22px;
+    }
+    .email a {
+        font-size: 28px;
+    } 
+}
+
