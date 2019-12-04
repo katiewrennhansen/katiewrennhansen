@@ -24,23 +24,33 @@
     <header>
         <nav class="nav" id="nav">
             <a class="logo" id="logo" href="index.html#home">KatieHansen</a>
-            <button class="nav-button">
+            <button class="nav-button" aria-label="navigation toggle">
                 <div id="bb-one" class="burger-bar"></div>
                 <div id="bb-two" class="burger-bar"></div>
                 <div id="bb-three" class="burger-bar"></div>
             </button>
             <div class="collapse-content" id="navbar">
                 <ul class="ul">
-                    <li class="nav-link"><a href="#home-page">Home</a></li>
-                    <div class="nav-divider"></div>
-                    <li class="nav-link"><a href="#about">About</a></li>
-                    <div class="nav-divider"></div>
-                    <li class="nav-link"><a href="#services">Services</a></li>
-                    <div class="nav-divider"></div>
-                    <li class="nav-link"><a href="#projects">Projects</a></li>
-                    <div class="nav-divider"></div>
-                    <li class="nav-link"><a href="#contact">Contact</a></li>
-                    <div class="nav-divider"></div>
+                    <li class="nav-link">
+                        <a href="#home-page">Home</a>
+                    </li>
+                    <li class="nav-divider"></li>
+                    <li class="nav-link">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="nav-divider"></li>
+                    <li class="nav-link">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="nav-divider"></li>
+                    <li class="nav-link">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-divider"></li>
+                    <li class="nav-link">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-divider"></li>
                 </ul>
             </div>
         </nav> 
@@ -216,8 +226,8 @@
                                         <div class="dot"></div>
                                         <div class="dot"></div>
                                         <div class="dot"></div>
-                                        <div class="dot gray"></div>
-                                        <div class="dot gray"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
                                         <div class="dot gray"></div>
                                         <div class="dot gray"></div>
                                         <div class="dot gray"></div>
@@ -231,8 +241,8 @@
                                             <div class="dot"></div>
                                             <div class="dot"></div>
                                             <div class="dot"></div>
-                                            <div class="dot gray"></div>
-                                            <div class="dot gray"></div>
+                                            <div class="dot"></div>
+                                            <div class="dot"></div>
                                             <div class="dot gray"></div>
                                             <div class="dot gray"></div>
                                             <div class="dot gray"></div>
@@ -245,7 +255,52 @@
                                         <div class="rating">
                                             <div class="dot"></div>
                                             <div class="dot"></div>
+                                            <div class="dot"></div>
+                                            <div class="dot"></div>
+                                            <div class="dot"></div>
                                             <div class="dot gray"></div>
+                                            <div class="dot gray"></div>
+                                            <div class="dot gray"></div>
+                                            <div class="dot gray"></div> 
+                                        </div>
+                                </div>
+
+                                <div class="postgreSQL skill">
+                                        <p>PostgresSQL</p>
+                                        <div class="rating">
+                                            <div class="dot"></div>
+                                            <div class="dot"></div>
+                                            <div class="dot"></div>
+                                            <div class="dot"></div>
+                                            <div class="dot gray"></div>
+                                            <div class="dot gray"></div>
+                                            <div class="dot gray"></div>
+                                            <div class="dot gray"></div>
+                                            <div class="dot gray"></div> 
+                                        </div>
+                                </div>
+
+                                <div class="restfulapi skill">
+                                        <p>RESTful APIs</p>
+                                        <div class="rating">
+                                            <div class="dot"></div>
+                                            <div class="dot"></div>
+                                            <div class="dot"></div>
+                                            <div class="dot"></div>
+                                            <div class="dot"></div>
+                                            <div class="dot gray"></div>
+                                            <div class="dot gray"></div>
+                                            <div class="dot gray"></div>
+                                            <div class="dot gray"></div> 
+                                        </div>
+                                </div>
+
+                                <div class="sql skill">
+                                        <p>SQL</p>
+                                        <div class="rating">
+                                            <div class="dot"></div>
+                                            <div class="dot"></div>
+                                            <div class="dot"></div>
                                             <div class="dot gray"></div>
                                             <div class="dot gray"></div>
                                             <div class="dot gray"></div>
@@ -400,6 +455,36 @@
                                                 <div class="dot gray"></div> 
                                             </div>
                                     </div>
+
+                                    <div class="github skill">
+                                            <p>Heroku: </p>
+                                            <div class="rating">
+                                                <div class="dot"></div>
+                                                <div class="dot"></div>
+                                                <div class="dot"></div>
+                                                <div class="dot"></div>
+                                                <div class="dot"></div>
+                                                <div class="dot"></div>
+                                                <div class="dot"></div>
+                                                <div class="dot gray"></div>
+                                                <div class="dot gray"></div> 
+                                            </div>
+                                    </div>
+        
+                                    <div class="gitlab skill">
+                                            <p>Zeit: </p>
+                                            <div class="rating">
+                                                <div class="dot"></div>
+                                                <div class="dot"></div>
+                                                <div class="dot"></div>
+                                                <div class="dot"></div>
+                                                <div class="dot"></div>
+                                                <div class="dot"></div>
+                                                <div class="dot"></div>
+                                                <div class="dot gray"></div>
+                                                <div class="dot gray"></div> 
+                                            </div>
+                                    </div>
                                 </div>
                         </div>
 
@@ -415,14 +500,23 @@
             <h2 class="h2">Projects</h2>
             <div class="underline"></div>
             <div class="proj-container">
-
+                <div class="single-proj">
+                        <img class="proj-image" src="images/devtracks.png" alt="image of devtracks home page">
+                        <div class="overlay">
+                            <h3 class="h3">DevTracks</h3>
+                            <p class="proj-text">Full stack application for tracking developer resources.</p>
+                            <div class="proj-links">
+                                <a class="project-button" href="./projectpages/devtracks.html">View Project</a>
+                            </div>
+                        </div>
+                    </div>
                 <div class="single-proj">
                     <img class="proj-image" src="images/healthyPlate.png" alt="image of healthy plate home page">
                     <div class="overlay">
                         <h3 class="h3">Healthy Plate</h3>
                         <p class="proj-text">Food search application built using HTML, CSS and jQuery.</p>
                         <div class="proj-links">
-                            <a class="project-button" href="healthyPlate.html">View Project</a>
+                            <a class="project-button" href="./projectpages/healthyPlate.html">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -432,7 +526,7 @@
                         <h3 class="h3">Anatomy Quiz</h3>
                         <p class="proj-text">Quiz App built using HTML, CSS and jQuery</p>
                         <div class="proj-links">
-                            <a class="project-button" href="quizApp.html">View Project</a>
+                            <a class="project-button" href="./projectpages/quizApp.html">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -442,7 +536,7 @@
                         <h3 class="h3">The Performance Coach</h3>
                         <p class="proj-text">Personal Training website built using HTML, CSS and JavaScript</p>
                         <div class="proj-links">
-                            <a class="project-button" href="performanceCoach.html">View Project</a>
+                            <a class="project-button" href="./projectpages/performanceCoach.html">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -452,7 +546,7 @@
                         <h3 class="h3">Otusasio Tours</h3>
                         <p class="proj-text">Birding website built using HTML, CSS and JavaScript</p>
                         <div class="proj-links">
-                            <a class="project-button" href="otusasio.html">View Project</a>
+                            <a class="project-button" href="./projectpages/otusasio.html">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -462,7 +556,7 @@
                         <h3 class="h3">Canvas</h3>
                         <p class="proj-text">Drawing App built using HTML Canvas</p>
                         <div class="proj-links">
-                            <a class="project-button" href="draw.html">View Project</a>
+                            <a class="project-button" href="./projectpages/draw.html">View Project</a>
                         </div>
                     </div>
                 </div>

@@ -12,15 +12,6 @@ const collapse = document.querySelector('.collapse-content');
 const navLinks = document.querySelectorAll('.nav-link');
 
 
-
-// function homePageFade(){
-//     $(document).ready(function() {
-//         $('div.hidden').fadeIn(1800).removeClass('hidden');
-//         $('nav.hidden').fadeIn(1800).removeClass('hidden');
-//     });
-// }
-
-
 //TOGGLE NAV 
 
 function toggleNav(){
@@ -76,7 +67,6 @@ navLinks.forEach(link => {
 
 //CALL ALL FUNCTIONS
 function callAllFuntions(){
-    homePageFade();
     overlayClick();
     overlayFocus();
 }
