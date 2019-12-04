@@ -165,7 +165,6 @@ html {
   }
   
   .collapse-content li {
-      padding: 50px 0 10px 0;
       text-transform: uppercase; 
       text-align: center;
       letter-spacing: 1px;
@@ -173,6 +172,7 @@ html {
   
   .collapse-content a {
       color: white;
+      margin: 50px 0 10px 0;
   }
   
   .nav a:hover {
@@ -191,7 +191,7 @@ html {
   
   .nav-divider {
       width: 6vw;
-      margin: 0 auto;
+      margin: 10px auto 50px;
       height: 4px;
       background-color: #03CC85;
   }
