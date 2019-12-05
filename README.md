@@ -1,9 +1,8 @@
-# dev-portfolio
+# Developer Portfolio
 
-this repo contains files for my personal portfolio webiste.
+This repository contains files for my personal portfolio webiste. 
 
-https://katiewrennhansen.com/
 
-to do:
-* add animations
-* link resume
+## The live website can be found at:
+https://katiewrennhansen.com
+
