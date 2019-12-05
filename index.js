@@ -13,7 +13,6 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 
 //TOGGLE NAV 
-
 function toggleNav(){
     collapse.classList.toggle('toggle');
     button.classList.toggle('cross');
@@ -37,9 +36,9 @@ function overlayClick(){
     });
 }
 
+//TOGGLE PROJECT IMAGE OVERLAY ON FOCUS
 function overlayFocus(){
     const projBtn = document.querySelectorAll('.project-button');
-
     for (let i = 0; i < projects.length; i++){
         projBtn[i].addEventListener('focus', function(){
             overlay[i].classList.add('show');
@@ -51,12 +50,15 @@ function overlayFocus(){
     }
 }
 
+overlayFocus();
 
-//ADD EVENT LISTENERS
+
+
+//EVENT LISTENERS
 button.addEventListener('click', toggleNav);
 main.addEventListener('click', removeNav);
 homePage.addEventListener('click', removeNav);
-//open nav with tab
+
 button.addEventListener('focus', toggleNav);
 button.addEventListener('blur', removeNav);
 
@@ -64,12 +66,11 @@ navLinks.forEach(link => {
     link.addEventListener('click', removeNav);
 });
 
+window.addEventListener('resize', function(){
+    if(window.innerWidth < 768){
+        overlayClick();
+    }
+})
 
-//CALL ALL FUNCTIONS
-function callAllFuntions(){
-    overlayClick();
-    overlayFocus();
-}
 
-
-callAllFuntions();          
+          

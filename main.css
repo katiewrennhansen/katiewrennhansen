@@ -225,9 +225,9 @@ PROJECTS
     height: 100%;
     width: 100%;
     opacity: 0; 
-    -webkit-transition: 300ms ease-in;
-         -o-transition: 300ms ease-in;
-            transition: 300ms ease-in;
+    -webkit-transition: 200ms ease-in;
+         -o-transition: 200ms ease-in;
+            transition: 200ms ease-in;
     background-color: #03CC85;
     padding: 40px 20px;
 }
