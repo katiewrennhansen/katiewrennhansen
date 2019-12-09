@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: http://katiewrennhansen.com/sitemap.xml
