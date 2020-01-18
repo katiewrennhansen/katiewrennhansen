@@ -175,16 +175,6 @@ html {
       margin: 50px 0 10px 0;
   }
   
-  .nav a:hover {
-      color:#03CC85; 
-      -webkit-transition-timing-function: ease-in-out;
-           -o-transition-timing-function: ease-in-out;
-              transition-timing-function: ease-in-out;
-      -webkit-transition-duration: 200ms;
-           -o-transition-duration: 200ms;
-              transition-duration: 200ms;
-  }
-  
   .nav a:focus {
       color: #03CC85;
   }
@@ -305,7 +295,6 @@ CONTACT
         margin-bottom: 80px;
     }
     /*nav styles*/
-    .nav-divider,
     .nav-button {
         display: none;
     }
@@ -333,6 +322,16 @@ CONTACT
         margin: 0;
         background-color: rgba(255, 255, 255, 0);
         font-family: 'Quattrocento', serif;
+    }
+    .nav-divider {
+        width: 0;
+        height: 3px;
+        margin: 0;
+        transition: 200ms linear;
+    }
+    .nav-link:hover div.nav-divider {
+        width: 40%;
+        transition: 200ms linear;
     }
     .ul {
         display: -webkit-box;
