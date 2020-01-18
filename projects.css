@@ -61,8 +61,8 @@ INDIVIDUAL PROJECTS
 }
 
 .sp-button {
-    border: 1px solid #0a1316;
-    color: #0a1316;
+    background: #0a1316;
+    color: white;
     box-shadow: 1px 1px 3px #0a13166f;
     font-weight: 500;
     border-radius: 3px;
@@ -86,12 +86,8 @@ INDIVIDUAL PROJECTS
          -o-transition-duration: 400ms;
             transition-duration: 400ms;
     background: #03CC85;
-    border: 1px solid #03CC85;
 }
 
-.sp-button:focus {
-    background: #03CC85;
-}
 
 .sp-icons {
     padding-top: 100px;

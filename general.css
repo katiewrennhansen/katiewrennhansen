@@ -326,7 +326,6 @@ CONTACT
         -webkit-box-align: end;
             -ms-flex-align: end;
                 align-items: flex-end;
-        /* padding-top: 32px; */
         height: 60px;
         transform: translateX(0px);
         transition-duration: 0ms;
