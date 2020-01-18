@@ -9,47 +9,52 @@
 
 <url>
   <loc>https://katiewrennhansen.com/</loc>
-  <lastmod>2019-12-05T16:04:14+00:00</lastmod>
+  <lastmod>2020-01-18T17:28:04+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://katiewrennhansen.com/index.html</loc>
-  <lastmod>2019-12-05T16:04:14+00:00</lastmod>
+  <lastmod>2020-01-18T17:28:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://katiewrennhansen.com/documents/Resume.pdf</loc>
-  <lastmod>2019-12-05T16:04:14+00:00</lastmod>
+  <loc>https://katiewrennhansen.com/documents/FSDResume_KatieWrennHansen.pdf</loc>
+  <lastmod>2020-01-18T17:28:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://katiewrennhansen.com/projectpages/crm.html</loc>
+  <lastmod>2020-01-18T17:28:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://katiewrennhansen.com/projectpages/compostable.html</loc>
+  <lastmod>2020-01-18T17:28:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://katiewrennhansen.com/projectpages/devtracks.html</loc>
-  <lastmod>2019-12-05T16:04:14+00:00</lastmod>
+  <lastmod>2020-01-18T17:28:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://katiewrennhansen.com/projectpages/healthyPlate.html</loc>
-  <lastmod>2019-12-05T16:04:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://katiewrennhansen.com/projectpages/quizApp.html</loc>
-  <lastmod>2019-12-05T16:04:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://katiewrennhansen.com/projectpages/performanceCoach.html</loc>
-  <lastmod>2019-12-05T16:04:14+00:00</lastmod>
+  <lastmod>2020-01-18T17:28:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://katiewrennhansen.com/projectpages/otusasio.html</loc>
-  <lastmod>2019-12-05T16:04:14+00:00</lastmod>
+  <lastmod>2020-01-18T17:28:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://katiewrennhansen.com/projectpages/draw.html</loc>
-  <lastmod>2019-12-05T16:04:14+00:00</lastmod>
+  <loc>https://katiewrennhansen.com/projectpages/performanceCoach.html</loc>
+  <lastmod>2020-01-18T17:28:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://katiewrennhansen.com/projectpages/quizApp.html</loc>
+  <lastmod>2020-01-18T17:28:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
