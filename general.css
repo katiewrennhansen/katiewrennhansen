@@ -327,7 +327,6 @@ CONTACT
         width: 0;
         height: 3px;
         margin: 0;
-        transition: 200ms linear;
     }
     .nav-link:hover div.nav-divider {
         width: 40%;
@@ -386,6 +385,9 @@ CONTACT
     .collapse-content a {
         font-size: 18px;
         padding-right: 40px;
+    }
+    .nav-divider {
+        transition: 200ms linear;
     }
      /*contact styles*/
      .contact p {

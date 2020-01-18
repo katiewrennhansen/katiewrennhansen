@@ -29,8 +29,8 @@ function removeNav(){
 
 //TOGGLE PROJECT IMAGE OVERLAY
 function overlayClick(){
-    overlay.forEach(function(img){
-        img.addEventListener('click', function(){
+    overlay.forEach(img => {
+        img.addEventListener('click', () => {
             this.classList.toggle('show');
         });
     });
@@ -40,10 +40,10 @@ function overlayClick(){
 function overlayFocus(){
     const projBtn = document.querySelectorAll('.project-button');
     for (let i = 0; i < projects.length; i++){
-        projBtn[i].addEventListener('focus', function(){
+        projBtn[i].addEventListener('focus', () => {
             overlay[i].classList.add('show');
         });   
-        projBtn[i].addEventListener('blur', function(){
+        projBtn[i].addEventListener('blur', () => {
             overlay[i].classList.remove('show');
         });                
        
@@ -66,11 +66,10 @@ navLinks.forEach(link => {
     link.addEventListener('click', removeNav);
 });
 
-window.addEventListener('resize', function(){
+window.addEventListener('resize', () => {
     if(window.innerWidth < 768){
         overlayClick();
     }
 })
 
 
-          
