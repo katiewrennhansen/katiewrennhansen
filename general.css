@@ -48,6 +48,10 @@ html {
   a {
       text-decoration: none;
   }
+
+  a:hover {
+      cursor: pointer;
+  }
   
   .h2 {
       padding: 100px 0 5px;

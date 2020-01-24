@@ -136,7 +136,6 @@
     padding: 60px 0;
 }
 
-
 .skill {
     padding-bottom: 12px;
 }
@@ -314,7 +313,7 @@ MEDIA QUERIES
     .programming-skills,
     .design-skills{
         margin: 40px auto;
-        width: 60%;
+        width: 100%;
     }
     .proj-container {
         margin: 0 50px;
@@ -399,6 +398,10 @@ MEDIA QUERIES
     .project-button {
         width: 70%;
     }
+    .programming {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
 }
 @media (min-width: 1200px){
     /*home page styles*/
@@ -437,26 +440,24 @@ MEDIA QUERIES
     .services:first-child {
         padding: 80px 0 0;
     }
-    .row {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        justify-content: center;
-        margin: 0 50px;
+    .programming {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
     }
-    .programming-skills {
-        padding-top: 0px;
+    .serve {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-around;
+        padding: 0 50px;
     }
-    .programming-skills, 
+    .programming-skills,
     .design-skills {
+        padding-top: 0px;
+        width: 100%;
         margin: 0 auto;
-        width: 80%;
     }
     .service {
         margin: 0 30px;
-    }
-    .design-skills {
-        padding-top: 0;
     }
     .resume-container {
         padding-bottom: 30px;

@@ -37,8 +37,10 @@ INDIVIDUAL PROJECTS
 }
 
 .project-info p {
+    text-align: left;
+    width: 85%;
     line-height: 1.5;
-    margin-bottom: 40px;
+    margin: 40px auto;
     font-size: 16px;
 }
 
@@ -115,6 +117,9 @@ MEDIA QUERIES
     }
     .project-content p {
         font-size: 18px;
+        width: 100%;
+        margin: 0 auto 40px;
+
     }
     .proj-underline {
         width: 80px;
