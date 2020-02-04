@@ -76,6 +76,11 @@ html {
       margin-bottom: 50px;
   }
   
+  ::selection,
+  ::-moz-selection {
+      background: #03CC85;
+      color: white;
+  }
   
   /*==============*/
   /*NAVIGATION STYLES */
