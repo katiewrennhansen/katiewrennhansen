@@ -23,7 +23,7 @@
 }
 
 .home-page h1{
-    font-size: 45px;
+    font-size: 53px;
     padding-top: 35vh;
     text-transform: uppercase;
     letter-spacing: 0.02rem;
@@ -33,7 +33,7 @@
     background-color: white;
     height: 1px;
     margin: 8px 0;
-    width: 210px;
+    width: 243px;
 }
 
 
@@ -215,6 +215,10 @@ PROJECTS
     position: relative;
 }
 
+/* .single-proj.usmodernist {
+    background: url ('images/usmodernist.png');
+} */
+
 .proj-image {
     width: 280px;
     height: 100%;
@@ -332,7 +336,7 @@ MEDIA QUERIES
         font-size: 70px;
     }
     .home-page p {
-        font-size: 24px;
+        font-size: 21.5px;
     }
     /*about styles*/
     .image {
@@ -401,7 +405,7 @@ MEDIA QUERIES
         animation: 1200ms ease-in-out slide-desktop;
     }
     .home-page p {
-        font-size: 32px;
+        font-size: 27.5px;
     }
     /*about styles*/
     .about-me {
