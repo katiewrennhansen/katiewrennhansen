@@ -210,16 +210,55 @@ PROJECTS
         justify-content: center;
 }
 
+.energyassistance {
+    background: url('images/energyassistance.png');
+}
+
+.usmodernist {
+    background: url('images/usmodernist.png');
+}
+
+.hawsphoto {
+    background: url('images/hawsphoto.png');
+}
+
+.vespa {
+    background: url('images/crm-properties.png');
+}
+
+.compostable {
+    background: url('images/compostable.png');
+}
+
+.compostable {
+    background: url('images/compostable.png');
+}
+
+.devtracks {
+    background: url('images/devtracks.jpg');
+}
+
+.otusasio {
+    background: url('images/otusasio.jpg');
+}
+
+.performancecoach {
+    background: url('images/performanceCoach.jpg');
+}
+
+.healthyplate {
+    background: url('images/healthyPlate.jpg');
+}
+
+.anatomyquiz {
+    background: url('images/quizApp.jpg');
+}
 
 .single-proj {
     position: relative;
-}
-
-/* .single-proj.usmodernist {
-    background: url ('images/usmodernist.png');
-} */
-
-.proj-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 280px;
     height: 100%;
     min-height: 250px;
@@ -234,15 +273,16 @@ PROJECTS
     height: 100%;
     width: 100%;
     opacity: 0; 
-    -webkit-transition: 200ms ease-in;
-         -o-transition: 200ms ease-in;
-            transition: 200ms ease-in;
+    -webkit-transition: 200ms ease-in-out;
+         -o-transition: 200ms ease-in-out;
+            transition: 200ms ease-in-out;
     background-color: #03CC85;
     padding: 40px 20px;
+    border: 2px solid #0a1316;
 }
 
 .single-proj:hover .overlay {
-    opacity: 1;
+    opacity: 0.94;
 }
 
 .show {
@@ -271,31 +311,49 @@ PROJECTS
 }
 
 .project-button {
-    border: 1px solid #0a1316;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid #0a1316;
     box-shadow: 1px 1px 2px #0a131666;
     color: #0a1316;
-    border-radius: 3px;
     padding: 7px 10px;
-    width: 60%;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
-.project-button:hover{
+.project-button:hover { 
+    color: white;         
+}
+
+.project-button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: #0a1316;
-    color: white;
-    -webkit-transform: scale(1.05); 
-        -ms-transform: scale(1.05); 
-            transform: scale(1.05);
-    -webkit-transition: -webkit-transform;
-    transition: -webkit-transform;
-    -o-transition: transform;
-    transition: transform;
-    transition: transform, -webkit-transform;
-    -webkit-transition-timing-function: cubic-bezier(.74,4.03,.47,.9);
-         -o-transition-timing-function: cubic-bezier(.74,4.03,.47,.9);
-            transition-timing-function: cubic-bezier(.74,4.03,.47,.9);
-    -webkit-transition-duration: 400ms;
-         -o-transition-duration: 400ms;
-            transition-duration: 400ms;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.project-button:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 .project-button:focus{
@@ -321,6 +379,7 @@ MEDIA QUERIES
     .proj-container {
         margin: 0 50px;
     }
+    .single-proj,
     .proj-image {
         width: 340px;
         min-height: 280px;
@@ -382,7 +441,7 @@ MEDIA QUERIES
     .proj-container {
         margin: 0 60px;
     }
-    .proj-image {
+    .single-proj {
         width: 360px;
         min-height: 300px;
     }
@@ -481,7 +540,7 @@ MEDIA QUERIES
     .proj-container {
         margin: 0 50px;
     }
-    .proj-image {
+    .single-proj {
         width: 400px;
         min-height: 360px;
     }

@@ -1,25 +1,33 @@
 //DOM VARIABLES
 const nav = document.getElementById('nav');
-const logo = document.querySelector('.logo');
-const button = document.querySelector('button');
+const button = document.querySelector('button.nav-button');
 const navbar = document.getElementById("navbar");
 const homePage = document.getElementById("home-page");
-const content = document.getElementById("line");
 const main = document.querySelector('main');
 const projects = document.querySelectorAll('.single-proj');
 const overlay = document.querySelectorAll('.overlay');
 const collapse = document.querySelector('.collapse-content');
 const navLinks = document.querySelectorAll('.nav-link');
 
+let navOpen = false;
 
 //TOGGLE NAV 
 function toggleNav(){
+    navOpen = !navOpen;
     collapse.classList.toggle('toggle');
     button.classList.toggle('cross');
     nav.classList.toggle('nav-background');
+
+    if(navOpen){
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = 'scroll';
+    }
 }
 
 function removeNav(){
+    navOpen = false;
+    document.body.style.overflow = 'scroll';
     collapse.classList.remove('toggle');
     button.classList.remove('cross');
     nav.classList.remove('nav-background');
@@ -53,14 +61,8 @@ function overlayFocus(){
 overlayFocus();
 
 
-
 //EVENT LISTENERS
 button.addEventListener('click', toggleNav);
-main.addEventListener('click', removeNav);
-homePage.addEventListener('click', removeNav);
-
-button.addEventListener('focus', toggleNav);
-button.addEventListener('blur', removeNav);
 
 navLinks.forEach(link => {
     link.addEventListener('click', removeNav);
@@ -70,5 +72,7 @@ window.addEventListener('resize', () => {
     if(window.innerWidth < 768){
         overlayClick();
     }
+    if(window.innerWidth > 767 && navOpen){
+        removeNav();
+    }
 })
-
