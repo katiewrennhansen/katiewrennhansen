@@ -26,7 +26,8 @@ html {
   .services-content h4,
   .projects h3, 
   .projects h4,
-  .project-info h2 {
+  .project-info h2,
+  .before-after h2 {
       font-family: Oswald, sans-serif;
       letter-spacing: 0.02rem;
   }

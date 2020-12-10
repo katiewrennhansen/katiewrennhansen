@@ -65,13 +65,19 @@
         <section class="project-info">
             <img class="single-project-image" src="../images/compostable.png" alt="photo of compostable home page">
             <div class="project-content">
-                <p>This crowdsourced application aims to connect urban people hoping to compost with composts in their area. Users can list their own compost locations, search for other composts on an interactive map and message other users that have listed composts.</p>
+                <h5>Purpose:</h5>
+                <p>This Full-Stack crowdsourced application aims to connect urban people hoping to compost with people in their area who have composts and are willing to accept more compost. Users can list their own compost locations, search for other composts on an interactive map and message other users that have listed composts. Any user can view all of the composts available on the map, but only logged in users can view information about other users as well as send and receive messages to set up composing drops offs. Users can also view and update their own personal account details. This project was completed to further my own personal learning endeavors and was never intended to gain traction as a service.</p>
+                <h5>Process:</h5>
+                <p>The Front-End of this application is built using React. I used react-map-gl to handle the mapping components and the Mapquest API to handle the geocoding. I also built out a custom popup competent that would open when clicking on a point on the map and display all information related to that particular address. The Front-End application is deployed on Zeit (now Vercel).</p>
+                <p>The Back-End API was built with Express on top of Node.js and uses knex.js to handle queries to the database. The database was built with PostgreSQL and used SQL to create the initial setup and handle the database migrations. I built out a basic authentication system in order to add extra security around the messaging systems so only registered users will be able to access the protected routes. The database and server are deployed on Heroku.</p>
                 <h2>Technologies Used:</h2>
                 <ul>
                     <li>CSS</li>
                     <li>React</li>
                     <li>Node.js</li>
+                    <li>react-map-gl</li>
                     <li>Express</li>
+                    <li>Knex.js</li>
                     <li>SQL</li>
                     <li>PostgreSQL</li>
                 </ul>

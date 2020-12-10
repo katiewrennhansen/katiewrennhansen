@@ -210,6 +210,10 @@ PROJECTS
         justify-content: center;
 }
 
+.jakeorndorff {
+    background: url('images/jakeorndorff.png');
+}
+
 .energyassistance {
     background: url('images/energyassistance.png');
 }
