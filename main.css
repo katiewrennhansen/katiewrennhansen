@@ -210,6 +210,10 @@ PROJECTS
         justify-content: center;
 }
 
+.spendanalyzer {
+    background: url('images/spend-analyzer.png');
+}
+
 .jakeorndorff {
     background: url('images/jakeorndorff.png');
 }

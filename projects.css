@@ -176,8 +176,6 @@ MEDIA QUERIES
     .single-project-image,
     .single-project-image-container  {
         width: 50%;
-        /* margin: 0 50px 20px 0;
-        float: left; */
         margin: 0 0 20px 50px;
         float: right;
     }

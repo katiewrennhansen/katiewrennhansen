@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147973097-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-147973097-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Katie Hansen | SpendAnalyzer</title>
+    <meta name="description" content="Portfolio website for web developer Katie Hansen">
+    <meta name="ketwords" content="Developer, Web Developer, Katie, Katie Hansen, Katie Wrenn, Katie Wrenn Hansen, Software Developer, Websites, Front-End Developer, Front End Developer, Full Stack Developer">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/Logo.png">
+    <link rel="stylesheet" href="../projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700|Arizonia|Oswald:400,500|Quattrocento:200,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav proj-nav" id="nav">
+            <a class="logo" id="logo" href="../index.html">KatieHansen</a>
+            <button class="nav-button" aria-label="navigation toggle">
+                <div id="bb-one" class="burger-bar"></div>
+                <div id="bb-two" class="burger-bar"></div>
+                <div id="bb-three" class="burger-bar"></div>
+            </button>
+            <div class="collapse-content" id="navbar">
+                <ul class="ul">
+                    <li class="nav-link">
+                        <a href="../index.html">Home</a>
+                        <div class="nav-divider"></div>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../index.html#about">About</a>
+                        <div class="nav-divider"></div>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../index.html#services">Skills</a>
+                        <div class="nav-divider"></div>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../index.html#projects">Projects</a>
+                        <div class="nav-divider"></div>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../index.html#contact">Contact</a>
+                        <div class="nav-divider"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
+        <section class="home-page single-project" id="home-page">
+            <h1 id="proj-h1">SpendAnalyzer</h1>
+            <div class="proj-underline"></div>
+        </section>
+    </header>
+    
+    <main role="main" class="main">
+        <section class="project-info">
+            <img class="single-project-image" src="../images/spend-analyzer.png" alt="photo of spendanalyzer home page">
+            <div class="project-content">
+                <h5>Purpose:</h5>
+                <p>The aim for this project was to create an application that will track monthly spending data and display insightful data visualizations based on all transactions made in a single month. The goal was not to store any user transaction data, but instead to allow a user to upload a CSV, which will automatically generate insights surrounding their spending habits.</p>
+                
+                <h5>Process:</h5>
+                <p>I built this application using React with TypeScript to handle all of the logic. I chose TypeScript to improve my own understanding of the language but also because this application handled a sizable amount of data, which I wanted to contain to a consistent format and having a typed language was useful. All of the data visualizations were built using D3.js as the library integrated well with TypeScript. The finished application is deployed on GitHub pages.</p>
+                <p>In order to use this application, users need to upload a CSV file with a specified format to ensure all calculations are possible. There are 4 main components to the application: a home component, which allows users to view an overview of their spending and exclude certain categories from their trends, a breakdown component, which allows users to view a breakdown of overall spending habits, a monthly breakdown component, which separates out spending by category per month and a transactions component, which lists all transactions made in the time frame. The combination of this information provides a deeper understanding into spending trends over time.</p>
+
+                <h2>Technologies Used:</h2>
+                <ul>
+                    <li>CSS</li>
+                    <li>React</li>
+                    <li>TypeScript</li>
+                    <li>D3.js</li>
+                </ul>
+                
+                <div class="proj-links">
+                    <a class="sp-button" href="https://katiewrennhansen.github.io/spending-analysis/" target="_blank">Visit Website</a>
+                    <a class="sp-button" href="https://github.com/katiewrennhansen/spending-analysis" target="_blank">GitHub Repo</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact sp-contact">
+            <div class="icons sp-icons">
+                <a href="mailto:katiewrennhansen@gmail.com">
+                    <i class="fas fa-envelope icon-link"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/katiewrennhansen" rel="noreferrer" target="_blank" aria-label="link to Katie Hansen's LinkedIn">
+                    <i class="fab fa-linkedin icon-link"></i>
+                </a>
+                <a href="https://github.com/katiewrennhansen" rel="noreferrer" target="_blank" aria-label="link to Katie Hansen's GitHub">
+                    <i class="fab fa-github icon-link"></i>
+                </a>
+            </div>
+            <div class="bottom-line"></div>
+            <p class="website">www.katiewrennhansen.com</p>
+        </section>   
+    </main>
+    <script type="text/javascript" src="../index.js"></script>
+</body>
+</html>
