@@ -369,6 +369,12 @@ PROJECTS
     color: white;
 }
 
+.disclaimer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: gray;
+}
+
 
 /* =============
 MEDIA QUERIES
