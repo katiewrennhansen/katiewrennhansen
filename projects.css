@@ -182,7 +182,7 @@ MEDIA QUERIES
     .single-project-image-container img {
         width: 100%;
     }
-    .project-content p,
+    .project-content p:not(.disclaimer),
     .project-content h5 {
         font-size: 18px;
         width: 100%;
