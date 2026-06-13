@@ -17,7 +17,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Katie Hansen | Energy Assistance Dashboard</title>
+    <title>Katie Hansen | Healthy Plate</title>
     <meta
       name="description"
       content="Portfolio website for web developer Katie Hansen"
@@ -77,8 +77,9 @@
           </ul>
         </div>
       </nav>
+
       <section class="home-page single-project" id="home-page">
-        <h1 id="proj-h1">Energy Assistance Dashboard</h1>
+        <h1 id="proj-h1">Healthy Plate</h1>
         <div class="proj-underline"></div>
       </section>
     </header>
@@ -87,65 +88,55 @@
       <section class="project-info">
         <img
           class="single-project-image"
-          src="../images/energyassistance.png"
-          alt="photo of energy assistance dashboard home page"
+          src="../images/healthyPlate.jpg"
+          alt="photo of healthy plate home page"
         />
         <div class="project-content">
           <h5>Purpose:</h5>
           <p>
-            This project was completed by a small team of developers and
-            designers within
-            <a href="https://codefordenver.org/" target="_blank"
-              >Code for Denver</a
-            >, a volunteer civic tech organization dedicated to building
-            software for local governments and nonprofits. The goal of this
-            project was to create a single-page web application for visualizing
-            and tracking data related to low-income energy assistance provided
-            by
-            <a href="https://www.energyoutreach.org/" target="_blank"
-              >Energy Assistance Colorado</a
-            >.
+            This project was built to help individuals interested in expanding
+            the diversity of their diets explore new food options. It allows the
+            user to search for any food and learn more about its origins and
+            nutritional information. Additionally, it provides the user with a
+            list of recipes that include the searched food and allows for
+            filtration based on dietary needs. As someone with a history in the
+            fitness industry, I wanted to create something that would help
+            others make healthier choices.
           </p>
           <h5>Process:</h5>
           <p>
-            I served as one of the primary front-end developers for this project
-            and was responsible for building out a large portion of the Next.js
-            application as well as implementing the designs provided by the UX
-            designer. I used react-vis, a data visualization library built on
-            top of React to create dynamically updated visualizations that
-            showcase trends in energy assistance needs for each county in
-            Colorado between 2010 - 2019. I was also responsible for
-            implementing a responsive design that allowed all of the data to be
-            accessed through mobile devices.
+            This functionality for this project was built using jQuery and uses
+            3 different APIs to populate the 3 different widgets on the page.
+            The top widget on the left uses the Wikipedia API to display a short
+            summary of the searched food. The top widget on the right uses the
+            Nutrient Database API to showcase the nutritional value of each
+            item. The final bottom widget used the Edamam API to fetch recipes
+            that include the searched food. You can filter the recipe results by
+            dietary restriction, diet type and number of results, all of which,
+            when selected, update the call to the Edamam API.
           </p>
           <h2>Technologies Used:</h2>
           <ul>
-            <li>Figma</li>
+            <li>HTML</li>
             <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Next.js</li>
-            <li>react-vis</li>
+            <li>jQuery</li>
+            <li>RESTful APIs</li>
           </ul>
 
           <div class="proj-links">
             <a
               class="sp-button"
-              href="https://energy-assistance-dashboard.netlify.app/"
+              href="https://katiewrennhansen.github.io/healthy-plate/"
               target="_blank"
-              >Visit Site*</a
+              >Visit Website</a
             >
             <a
               class="sp-button"
-              href="https://github.com/codefordenver/energy-assistance-dashboard"
+              href="https://github.com/katiewrennhansen/healthy-plate"
               target="_blank"
               >GitHub Repo</a
             >
           </div>
-
-          <p class="disclaimer">
-            *This website is still active however no current data is loaded into
-            the system so data visualizations are not viewable.
-          </p>
         </div>
       </section>
 

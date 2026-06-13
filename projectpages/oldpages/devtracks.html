@@ -17,7 +17,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Katie Hansen | Energy Assistance Dashboard</title>
+    <title>Katie Hansen | DevTracks</title>
     <meta
       name="description"
       content="Portfolio website for web developer Katie Hansen"
@@ -78,7 +78,7 @@
         </div>
       </nav>
       <section class="home-page single-project" id="home-page">
-        <h1 id="proj-h1">Energy Assistance Dashboard</h1>
+        <h1 id="proj-h1">DevTracks</h1>
         <div class="proj-underline"></div>
       </section>
     </header>
@@ -87,65 +87,72 @@
       <section class="project-info">
         <img
           class="single-project-image"
-          src="../images/energyassistance.png"
-          alt="photo of energy assistance dashboard home page"
+          src="../images/devtracks.jpg"
+          alt="photo of draw canvas page"
         />
         <div class="project-content">
           <h5>Purpose:</h5>
           <p>
-            This project was completed by a small team of developers and
-            designers within
-            <a href="https://codefordenver.org/" target="_blank"
-              >Code for Denver</a
-            >, a volunteer civic tech organization dedicated to building
-            software for local governments and nonprofits. The goal of this
-            project was to create a single-page web application for visualizing
-            and tracking data related to low-income energy assistance provided
-            by
-            <a href="https://www.energyoutreach.org/" target="_blank"
-              >Energy Assistance Colorado</a
-            >.
+            As a self-taught developer, my goal was to create a place to track
+            all of the non-traditional learning resources that I have used
+            throughout my journey into tech. I created this application with the
+            intention of organizing my learning process by tracking courses I
+            have taken, articles and books that I have read, conferences and
+            lectures I have attended and more. This project was completed to
+            further my own personal learning endeavors and was never intended to
+            gain traction as a service.
           </p>
           <h5>Process:</h5>
           <p>
-            I served as one of the primary front-end developers for this project
-            and was responsible for building out a large portion of the Next.js
-            application as well as implementing the designs provided by the UX
-            designer. I used react-vis, a data visualization library built on
-            top of React to create dynamically updated visualizations that
-            showcase trends in energy assistance needs for each county in
-            Colorado between 2010 - 2019. I was also responsible for
-            implementing a responsive design that allowed all of the data to be
-            accessed through mobile devices.
+            The Front-End of this application is built using React. Beyond the
+            landing page, logged in users have access to a dashboard that
+            displays a list of all of the resources they have collected. Each
+            resource card includes a title, category, short description, a
+            status and a completion date. Clicking into each resource allows a
+            user to edit or delete that entry by making calls to the database
+            through the Back-End API. Resources can also be filtered
+            alphabetically or by most recently completed. The left-hand sidebar
+            displays the user’s name, position, linked accounts (such as
+            LinkedIn or GitHub) and a list of links to projects that the user
+            has completed. New resources can be created and account information
+            can be edited at any point. The Front-End application is deployed on
+            Zeit (now Vercel).
+          </p>
+          <p>
+            The Back-End API for this project was built with Express on top of
+            Node.js and uses knex.js to handle queries to the database. The
+            database was built with PostgreSQL and used SQL to create the
+            initial setup and handle the database migrations. Functionality
+            within this API allows users to have full autonomy around viewing,
+            adding, updating and deleting any resource, project or linked
+            account associated with their personal account. I built out a basic
+            authentication system in order to add extra security to individual
+            user’s information. The database and server are deployed on Heroku.
           </p>
           <h2>Technologies Used:</h2>
           <ul>
-            <li>Figma</li>
             <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Next.js</li>
-            <li>react-vis</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>SQL</li>
+            <li>PostgreSQL</li>
           </ul>
 
           <div class="proj-links">
             <a
               class="sp-button"
-              href="https://energy-assistance-dashboard.netlify.app/"
+              href="https://dev-track.now.sh/"
               target="_blank"
-              >Visit Site*</a
+              >Visit Website</a
             >
             <a
               class="sp-button"
-              href="https://github.com/codefordenver/energy-assistance-dashboard"
+              href="https://github.com/katiewrennhansen/dev-track"
               target="_blank"
               >GitHub Repo</a
             >
           </div>
-
-          <p class="disclaimer">
-            *This website is still active however no current data is loaded into
-            the system so data visualizations are not viewable.
-          </p>
         </div>
       </section>
 
