@@ -60,7 +60,8 @@
 }
 
 .about {
-  padding: 100px 0 60px;
+  padding: 0px 0 60px;
+  border-top: 2px solid rgb(218, 217, 217);
 }
 
 .about-me {
@@ -129,13 +130,9 @@
 }
 
 .card-icon {
-  font-size: 60px;
+  font-size: 25px;
   margin: 20px;
   color: #0a1316;
-}
-
-.serve {
-  padding-bottom: 120px;
 }
 
 .programming-skills,
@@ -163,7 +160,7 @@
 }
 
 .resume-container {
-  margin-top: 60px;
+  margin: 60px auto 0;
   display: inline-block;
 }
 
@@ -203,7 +200,7 @@
 PROJECTS
 ============= */
 .projects {
-  padding-bottom: 150px;
+  padding-bottom: 60px;
   margin: 0 auto;
 }
 
@@ -341,6 +338,7 @@ PROJECTS
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  border-radius: 3px;
 }
 
 .project-button:hover {
@@ -534,11 +532,16 @@ MEDIA QUERIES
     grid-template-columns: repeat(4, auto);
     margin-top: 100px;
   }
+  .services-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
   .serve {
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: space-around;
-    padding: 0 50px;
+    padding-bottom: 50px;
   }
   .programming-skills,
   .design-skills {
