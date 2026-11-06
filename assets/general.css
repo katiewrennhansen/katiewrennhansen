@@ -18,14 +18,9 @@ html {
 }
 
 .home-page h1,
-.h1,
 .h2,
-.about h3,
-.about h4,
 .services-content h3,
-.services-content h4,
 .projects h3,
-.projects h4,
 .project-info h2,
 .before-after h2 {
   font-family: Oswald, sans-serif;
@@ -38,7 +33,6 @@ html {
 .projects,
 .card,
 .contact,
-.resume-download h4,
 .project-info p,
 .project-info li,
 a.sp-button,
@@ -52,6 +46,13 @@ a {
 
 a:hover {
   cursor: pointer;
+}
+
+.main {
+  text-align: center;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  margin-top: -15vh;
 }
 
 .h2 {
@@ -162,6 +163,7 @@ a:hover {
   font-family: "Quattrocento", sans-serif;
   font-size: 20px;
   letter-spacing: 0.03em;
+  width: 100%;
 }
 
 .toggle {
@@ -196,13 +198,6 @@ a:hover {
   background-color: #03cc85;
 }
 
-.show-nav {
-  display: block;
-  -webkit-transition: display 200ms ease-in-out;
-  -o-transition: display 200ms ease-in-out;
-  transition: display 200ms ease-in-out;
-}
-
 /* =============
 CONTACT
 ============= */
@@ -216,13 +211,13 @@ CONTACT
       from(rgba(0, 0, 0, 0.78)),
       to(rgba(0, 0, 0, 0.78))
     ),
-    url("images/forest.jpg");
+    url("../images/forest.jpg");
   background:
     -o-linear-gradient(left, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)),
-    url("images/forest.jpg");
+    url("../images/forest.jpg");
   background:
     linear-gradient(to right, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)),
-    url("images/forest.jpg");
+    url("../images/forest.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -240,7 +235,7 @@ CONTACT
 
 .contact p {
   padding: 15px;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .email a {
@@ -306,6 +301,10 @@ CONTACT
   /*global styles*/
   .h2 {
     font-size: 50px;
+  }
+  .h3 {
+    font-size: 28px;
+    padding-bottom: 10px;
   }
   .underline {
     width: 50px;
@@ -413,5 +412,16 @@ CONTACT
   }
   .email a {
     font-size: 28px;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

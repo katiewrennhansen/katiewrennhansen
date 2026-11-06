@@ -1,5 +1,5 @@
 @import "general.css";
-@import "main.css";
+@import "landing.css";
 
 /* =============
 INDIVIDUAL PROJECTS
@@ -165,6 +165,12 @@ INDIVIDUAL PROJECTS
   padding-top: 100px;
 }
 
+.disclaimer {
+  margin-top: 20px;
+  font-size: 14px !important;
+  color: gray;
+}
+
 /* =============
 MEDIA QUERIES
 ============= */
@@ -199,10 +205,6 @@ MEDIA QUERIES
   }
   .sp-button {
     padding: 8px 10px;
-  }
-  .before-after-flex {
-    display: flex;
-    justify-content: space-evenly;
   }
   .single-project-image-ba {
     width: 360px;
@@ -241,7 +243,6 @@ MEDIA QUERIES
     font-size: 60px;
   }
   .proj-text {
-    font-size: 22px;
     padding-bottom: 40px;
   }
   .project-content h2 {
@@ -254,5 +255,207 @@ MEDIA QUERIES
   .sp-button {
     padding: 10px 12px;
     font-size: 16px;
+  }
+}
+
+/* Portfolio project gallery */
+#projects {
+  padding-bottom: 60px;
+  margin: 0 auto;
+}
+
+#projects .proj-container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#projects .jakeorndorff {
+  background: url("../images/jakeorndorff.png");
+}
+
+#projects .energyassistance {
+  background: url("../images/energyassistance.png");
+}
+
+#projects .usmodernist {
+  background: url("../images/usmodernist.png");
+}
+
+#projects .hawsphoto {
+  background: url("../images/hawsphoto.png");
+}
+
+#projects .vespa {
+  background: url("../images/crm-properties.png");
+}
+
+#projects .otusasio {
+  background: url("../images/otusasio.jpg");
+}
+
+#projects .performancecoach {
+  background: url("../images/performanceCoach.jpg");
+}
+
+#projects .single-proj {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 280px;
+  height: 100%;
+  min-height: 250px;
+}
+
+#projects .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: 200ms ease-in-out;
+  -o-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  background-color: #03cc85;
+  padding: 40px 20px;
+  border: 2px solid #0a1316;
+}
+
+#projects .single-proj:hover .overlay {
+  opacity: 0.94;
+}
+
+#projects .show {
+  opacity: 1;
+}
+
+#projects h3 {
+  font-size: 26px;
+  color: #0a1316;
+}
+
+#projects .proj-text {
+  color: #0a1316;
+  font-size: 18px;
+  padding-bottom: 30px;
+  line-height: 1.5;
+}
+
+#projects .proj-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#projects .project-button {
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 2px solid #0a1316;
+  box-shadow: 1px 1px 2px #0a131666;
+  color: #0a1316;
+  padding: 7px 10px;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  border-radius: 3px;
+}
+
+#projects .project-button:hover {
+  color: white;
+}
+
+#projects .project-button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0a1316;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+#projects .project-button:hover:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#projects .project-button:focus {
+  background-color: #0a1316;
+  color: white;
+}
+
+@media (min-width: 470px) {
+  #projects .proj-container {
+    margin: 0 50px;
+  }
+  #projects .single-proj {
+    width: 340px;
+    min-height: 280px;
+  }
+}
+
+@media (min-width: 768px) {
+  #projects p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  #projects .proj-container {
+    margin: 0 60px;
+  }
+  #projects .single-proj {
+    width: 360px;
+    min-height: 300px;
+  }
+  #projects .project-button {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #projects .proj-container {
+    margin: 0 50px;
+  }
+  #projects .single-proj {
+    width: 400px;
+    min-height: 360px;
+  }
+  #projects h3 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    letter-spacing: 1px;
+  }
+  #projects .proj-text {
+    padding-bottom: 40px;
+  }
+  #projects .project-button {
+    padding: 10px 12px;
   }
 }

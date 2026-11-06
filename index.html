@@ -30,7 +30,6 @@
     />
     <link rel="shortcut icon" type="image/x-icon" href="images/Logo.png" />
     <link rel="preload" as="image" href="images/cover.jpg" />
-    <link rel="stylesheet" href="main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
@@ -45,6 +44,11 @@
       href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700|Arizonia|Oswald:400,500|Quattrocento:200,400,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/general.css" />
+    <link rel="stylesheet" href="assets/landing.css" />
+    <link rel="stylesheet" href="assets/about.css" />
+    <link rel="stylesheet" href="assets/services.css" />
+    <link rel="stylesheet" href="assets/projects.css" />
   </head>
 
   <body class="body">
@@ -63,15 +67,15 @@
               <div class="nav-divider"></div>
             </li>
             <li class="nav-link">
-              <a href="#about">About</a>
-              <div class="nav-divider"></div>
-            </li>
-            <li class="nav-link">
               <a href="#services">Services</a>
               <div class="nav-divider"></div>
             </li>
             <li class="nav-link">
               <a href="#projects">Projects</a>
+              <div class="nav-divider"></div>
+            </li>
+            <li class="nav-link">
+              <a href="#about">About</a>
               <div class="nav-divider"></div>
             </li>
             <li class="nav-link">
@@ -84,440 +88,64 @@
       <section class="home-page" id="home-page">
         <div class="home-page-content">
           <h1>Hi, I'm <span>Katie</span></h1>
-          <div class="line" id="line"></div>
+          <div class="line"></div>
           <p>I'm a creative front-end engineer.</p>
         </div>
       </section>
     </header>
 
     <main role="main" class="main">
-     
-
-      <section class="services-content" id="services">
-        <div class="about-contaniner">
-          <div class="services">
-            <h2 class="h2">Services</h2>
-            <div class="underline services-underline"></div>
-            <div class="services-content">
-              <div class="serve row">
-                <div class="card service">
-                  <i class="fas fa-code card-icon"></i>
-                  <h3 class="h3">Front-End Development</h3>
-                  <p>
-                    I build fast, accessible websites and web apps with React,
-                    TypeScript, and Next.js, so your site feels smooth for
-                    visitors and is easy to grow over time.
-                  </p>
-                </div>
-                <div class="card service">
-                  <i class="fas fa-paint-brush card-icon"></i>
-                  <h3 class="h3">Design-to-Code Implementation</h3>
-                  <p>
-                    Already have designs in Figma? I turn them into
-                    pixel-accurate, responsive interfaces that look right on
-                    every screen and match what your designer intended.
-                  </p>
-                </div>
-                <div class="card service">
-                  <i class="fas fa-desktop card-icon"></i>
-                  <h3 class="h3">Redesigns & Performance Improvements</h3>
-                  <p>
-                    If your current site is slow, outdated, or hard to use on
-                    mobile, I’ll modernize it, improving load times,
-                    accessibility, and usability so visitors stay and take
-                    action.
-                  </p>
-                </div>
-              </div>
-                <div class="serve row">
-                  <div class="card service"> 
-                    <i class="fas fa-code card-icon"></i>
-                    <h3 class="h3">Front-End Support for Teams</h3>
-                    <p>
-                      Need an extra senior engineer? I can join your team for
-                      feature work, code reviews, documentation, or TypeScript
-                      migrations, with the experience of having led front-end
-                      work at a growing company.
-                    </p>
-                  </div>
-                  <div class="card service">
-                    <i class="fas fa-paint-brush card-icon"></i>
-                    <h3 class="h3">Design Systems & Component Libraries</h3>
-                    <p>
-                      I create reusable component libraries with Storybook, so
-                      your team builds new pages faster and your brand stays
-                      consistent as you grow.
-                    </p>
-                  </div>
-             
-                  <div class="card service">
-                    <i class="fas fa-desktop card-icon"></i>
-                    <h3 class="h3">Web Apps & Dashboards</h3>
-                    <p>
-                      From customer portals to data dashboards, I build interactive tools that make complex information clear and easy to use. I can also connect them to your APIs and handle light back-end work when needed.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="card service">
-                <i class="fas fa-paint-brush card-icon"></i>
-                <h3 class="h3">Design</h3>
-                <p>
-                  I work to ensure that all of my designs look beautiful and
-                  function properly on every screen size by using progressive
-                  enhancement techniques and cross browser testing.
-                </p>
-              </div>
-              <div class="card service">
-                <i class="fas fa-code card-icon"></i>
-                <h3 class="h3">Front-End</h3>
-                <p>
-                  I use technologies including React and Typescript
-                  to build simple yet elegant web applications. I keep my code
-                  efficient, organized, and always use current best practices.
-                </p>
-              </div>
-              <div class="card service">
-                <i class="fas fa-desktop card-icon"></i>
-                <h3 class="h3">Back-End</h3>
-                <p>
-                  I use technologies including Node.js, SQL and
-                  PostgreSQL to build my back-end applications. I use test
-                  driven development to make sure my code functions in any
-                  scenario.
-                </p>
-              </div> -->
-            </div>
+      <section class="services-container" id="services">
+        <h2 class="h2">Services</h2>
+        <div class="underline"></div>
+        <div class="services-content">
+          <div class="card service">
+            <i class="fas fa-code card-icon"></i>
+            <h3 class="h3">Front-End Development</h3>
+            <p>
+              I build fast, accessible web apps with React, TypeScript, and
+              Next.js, so your product feels smooth for users and is easy to
+              grow. Whether you need a full project built or an extra senior
+              engineer to join your team, I bring the experience of leading
+              front-end work at a growing company.
+            </p>
           </div>
-          <!-- <div class="skills">
-            <div class="programming row">
-              <div class="card programming-skills">
-                <h3 class="h3 title">Front-End</h3>
-                <div class="skill-container">
-                  <div class="skill">
-                    <p>Typescript</p>
-                    <div class="rating">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                    </div>
-                  </div>
-
-                  <div class="skill">
-                    <p>React</p>
-                    <div class="rating">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                    </div>
-                  </div>
-
-                  <div class="skill">
-                    <p>JavaScript</p>
-                    <div class="rating">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                    </div>
-                  </div>
-
-                  <div class="skill">
-                    <p>Tailwind</p>
-                    <div class="rating">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                    </div>
-                  </div>
-
-                  <div class="skill">
-                    <p>React Native</p>
-                    <div class="rating">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                    </div>
-                  </div>
-
-                  <div class="skill">
-                    <p>Next.js</p>
-                    <div class="rating">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card programming-skills">
-                <h3 class="h3 title">Back-End</h3>
-                <div class="skill-container">
-                  <div class="skill">
-                    <p>Node.js</p>
-                    <div class="rating">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                    </div>
-                  </div>
-
-                  <div class="skill">
-                    <p>npm</p>
-                    <div class="rating">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                    </div>
-                  </div>
-
-                  <div class="skill">
-                    <p>SQL</p>
-                    <div class="rating">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                    </div>
-                  </div>
-
-                  <div class="skill">
-                    <p>RESTful APIs</p>
-                    <div class="rating">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                    </div>
-                  </div>
-
-                  <div class="skill">
-                    <p>PostgreSQL</p>
-                    <div class="rating">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card design-skills">
-                <h3 class="h3 title">Design</h3>
-                <div class="skill-container">
-                  <div class="skill">
-                    <p>Responsive Design</p>
-                    <div class="rating">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                    </div>
-                  </div>
-                  <div class="skill">
-                    <p>Figma</p>
-                    <div class="rating">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                    </div>
-                  </div>
-
-                  <div class="skill">
-                    <p>Storybook</p>
-                    <div class="rating">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card design-skills">
-                <h3 class="h3 title">Other Tools</h3>
-                <div class="skill-container">
-                  <div class="skill">
-                    <p>Git</p>
-                    <div class="rating">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                    </div>
-                  </div>
-
-                  <div class="skill">
-                    <p>GitHub</p>
-                    <div class="rating">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                    </div>
-                  </div>
-
-                  <div class="skill">
-                    <p>GitLab</p>
-                    <div class="rating">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                    </div>
-                  </div>
-
-                  <div class="skill">
-                    <p>Datadog</p>
-                    <div class="rating">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                    </div>
-                  </div>
-
-                  <div class="jest skill">
-                    <p>Jest</p>
-                    <div class="rating">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                    </div>
-                  </div>
-
-                  <div class="jest skill">
-                    <p>React Testing Lib.</p>
-                    <div class="rating">
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                      <div class="dot gray"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
+          <div class="card service">
+            <i class="fas fa-paint-brush card-icon"></i>
+            <h3 class="h3">Design-to-Code Implementation</h3>
+            <p>
+              I turn your Figma designs into pixel-accurate, responsive
+              interfaces, and build reusable components with Storybook so your
+              brand stays consistent and new pages come together faster as you
+              grow.
+            </p>
+          </div>
+          <div class="card service">
+            <i class="fas fa-desktop card-icon"></i>
+            <h3 class="h3">Redesigns & Performance Improvements</h3>
+            <p>
+              If your current site is slow, outdated, or hard to use on mobile,
+              I’ll modernize it, improving load times, accessibility, and
+              usability so visitors stay and take action.
+            </p>
+          </div>
+          <div class="card service">
+            <i class="fas fa-desktop card-icon"></i>
+            <h3 class="h3">Web Apps & Dashboards</h3>
+            <p>
+              From customer portals to data dashboards, I build interactive
+              tools that make complex information clear and easy to use. I can
+              also connect them to your APIs and handle light back-end work when
+              needed.
+            </p>
+          </div>
         </div>
         <div class="resume-container">
           <a
             href="documents/KatieWrennHansen_Resume_6.10.26.pdf"
             class="resume-download"
             target="_blank"
-            ><i class="far fa-arrow-alt-circle-down"></i
+            ><i class="resume-icon far fa-arrow-alt-circle-down"></i
             ><span>View Resume</span></a
           >
         </div>
@@ -630,8 +258,8 @@
         </div>
       </section>
 
-       <section class="about" id="about">
-        <div class="about-me">
+      <section class="about" id="about">
+        <div class="about-container">
           <h2 class="h2">About</h2>
           <div class="underline"></div>
           <div class="about-content">

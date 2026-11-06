@@ -1,0 +1,32 @@
+@import "general.css";
+
+.main {
+  text-align: center;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  margin-top: -15vh;
+}
+
+.disclaimer {
+  margin-top: 20px;
+  font-size: 14px !important;
+  color: gray;
+}
+
+@media (min-width: 768px) {
+  .h3 {
+    font-size: 28px;
+    padding-bottom: 10px;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
