@@ -45,7 +45,9 @@
   color: #0b0f0e;
   text-decoration: none;
   font-family: Oswald, sans-serif;
-  transition: background-color 160ms ease, transform 160ms ease;
+  transition:
+    background-color 160ms ease,
+    transform 160ms ease;
 }
 
 .services-section-cta:hover {
@@ -75,9 +77,7 @@
 }
 
 .services-section-card h3 {
-  font-family: Oswald, sans-serif;
   margin: 0;
-  font-size: 20px;
   font-weight: 700;
   line-height: 1.3;
 }

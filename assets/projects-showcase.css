@@ -89,10 +89,6 @@
   line-height: 1.25;
 }
 
-.projects-showcase-featured-content h3 {
-  font-size: 32px;
-}
-
 .projects-showcase-featured-content > p:not(.projects-showcase-category),
 .projects-showcase-card-content > p:not(.projects-showcase-category) {
   margin: 0;
@@ -162,10 +158,6 @@
   letter-spacing: 0.12em;
 }
 
-.projects-showcase-card-content h3 {
-  font-size: 24px;
-}
-
 .projects-showcase-card-content > p:not(.projects-showcase-category) {
   font-size: 18px;
 }
@@ -191,10 +183,6 @@
 
   .projects-showcase-featured-content {
     padding: 28px;
-  }
-
-  .projects-showcase-featured-content h3 {
-    font-size: 28px;
   }
 
   .projects-showcase-card-image {

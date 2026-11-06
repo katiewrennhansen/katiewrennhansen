@@ -20,11 +20,11 @@ html {
 }
 
 .home-page h1,
-.h2,
-.services-content h3,
-.projects h3 {
+h2,
+h3 {
   font-family: Oswald, sans-serif;
   letter-spacing: 0.02rem;
+  font-size: 22px;
 }
 
 .home-page,
@@ -55,18 +55,12 @@ a:hover {
   margin-top: -15vh;
 }
 
-.h2 {
+h2 {
   padding: 5px 0;
   font-size: 35px;
   color: black;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-}
-
-.h3 {
-  font-size: 22px;
-  letter-spacing: 0.1rem;
-  padding-bottom: 15px;
 }
 
 .underline {
@@ -206,12 +200,11 @@ a:hover {
 
 @media (min-width: 768px) {
   /*global styles*/
-  .h2 {
+  h2 {
     font-size: 50px;
   }
-  .h3 {
-    font-size: 28px;
-    padding-bottom: 10px;
+  h3 {
+    font-size: 26px;
   }
   .underline {
     width: 50px;
@@ -272,12 +265,9 @@ a:hover {
 }
 @media (min-width: 1200px) {
   /*global styles*/
-  .h2 {
+  h2 {
     font-size: 60px;
     padding-bottom: 0;
-  }
-  .h3 {
-    font-size: 30px;
   }
   .underline {
     width: 60px;
