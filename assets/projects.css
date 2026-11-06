@@ -5,6 +5,14 @@
 INDIVIDUAL PROJECTS
 ============= */
 
+h2 {
+  font-family: Oswald, sans-serif !important;
+}
+
+p {
+  font-family: "Source Sans 3", sans-serif !important;
+}
+
 .single-project {
   height: 40vh;
   background-position: bottom right;
