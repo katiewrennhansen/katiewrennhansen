@@ -161,10 +161,6 @@ INDIVIDUAL PROJECTS
   transform: scaleX(1);
 }
 
-.sp-icons {
-  padding-top: 100px;
-}
-
 .disclaimer {
   margin-top: 20px;
   font-size: 14px !important;
@@ -223,19 +219,6 @@ MEDIA QUERIES
   }
   .before-after div.mobile {
     min-height: 700px;
-  }
-  /*contact styles*/
-  .contact p {
-    font-size: 18px;
-    margin-bottom: 15px;
-  }
-  .email a {
-    font-size: 22px;
-  }
-  .icons {
-    margin-top: 35px;
-    width: 60%;
-    font-size: 35px;
   }
 }
 @media (min-width: 1200px) {

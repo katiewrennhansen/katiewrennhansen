@@ -1,0 +1,125 @@
+.contact {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(0, 0, 0, 0.78)),
+      to(rgba(0, 0, 0, 0.78))
+    ),
+    url("../images/forest.jpg");
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)),
+    url("../images/forest.jpg");
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.78),
+      rgba(0, 0, 0, 0.78)
+    ),
+    url("../images/forest.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 100%);
+  padding-bottom: 50px;
+  color: white;
+  font-family: "Source Sans 3", sans-serif;
+  text-shadow: 1px 1px 1px rgb(54, 54, 54);
+}
+
+.contact h2 {
+  color: white;
+  padding-top: 200px;
+}
+
+.contact p {
+  padding: 15px;
+  font-size: 18px;
+}
+
+.email a {
+  color: white;
+  font-size: 20px;
+}
+
+.email a:hover,
+.email a:focus {
+  color: #03cc85;
+  transition: 300ms linear 10ms;
+}
+
+.icons {
+  margin: 30px auto 20px;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.icon-link {
+  color: white;
+}
+
+.icon-link:hover {
+  color: #03cc85;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: cubic-bezier(0.74, 4.03, 0.47, 0.9);
+  -o-transition-timing-function: cubic-bezier(0.74, 4.03, 0.47, 0.9);
+  transition-timing-function: cubic-bezier(0.74, 4.03, 0.47, 0.9);
+  -webkit-transition-duration: 400ms;
+  -o-transition-duration: 400ms;
+  transition-duration: 400ms;
+}
+
+.bottom-line {
+  height: 1px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(128, 128, 128, 0.434);
+}
+
+.website {
+  margin-top: 30px;
+  color: gray;
+  text-align: center;
+}
+
+.sp-icons {
+  padding-top: 100px;
+}
+
+@media (min-width: 768px) {
+  .contact p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .email a {
+    font-size: 22px;
+  }
+
+  .icons {
+    margin-top: 35px;
+    width: 60%;
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact p {
+    font-size: 22px;
+  }
+
+  .email a {
+    font-size: 28px;
+  }
+}

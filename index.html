@@ -41,7 +41,7 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700|Arizonia|Oswald:400,500|Quattrocento:200,400,700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700|Arizonia|Oswald:400,500|Source+Sans+3:200,400,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/general.css" />
@@ -49,6 +49,7 @@
     <link rel="stylesheet" href="assets/about.css" />
     <link rel="stylesheet" href="assets/services.css" />
     <link rel="stylesheet" href="assets/projects.css" />
+    <link rel="stylesheet" href="assets/projects-showcase.css" />
   </head>
 
   <body class="body">
@@ -95,165 +96,251 @@
     </header>
 
     <main role="main" class="main">
-      <section class="services-container" id="services">
-        <h2 class="h2">Services</h2>
-        <div class="underline"></div>
-        <div class="services-content">
-          <div class="card service">
-            <i class="fas fa-code card-icon"></i>
-            <h3 class="h3">Front-End Development</h3>
-            <p>
-              I build fast, accessible web apps with React, TypeScript, and
-              Next.js, so your product feels smooth for users and is easy to
-              grow. Whether you need a full project built or an extra senior
-              engineer to join your team, I bring the experience of leading
-              front-end work at a growing company.
-            </p>
+      <section class="services-section" aria-labelledby="services">
+        <div class="services-section-inner">
+          <div class="services-section-header">
+            <div>
+              <h2 class="services-section-title h2" id="services">Services</h2>
+              <div class="underline"></div>
+            </div>
+            <a class="services-section-cta" href="#contact"
+              >Tell me about your project</a
+            >
           </div>
-          <div class="card service">
-            <i class="fas fa-paint-brush card-icon"></i>
-            <h3 class="h3">Design-to-Code Implementation</h3>
-            <p>
-              I turn your Figma designs into pixel-accurate, responsive
-              interfaces, and build reusable components with Storybook so your
-              brand stays consistent and new pages come together faster as you
-              grow.
-            </p>
+          <div class="services-section-grid">
+            <article class="services-section-card">
+              <p class="services-section-number" aria-hidden="true">01</p>
+              <h3>Front-End Development</h3>
+              <p>
+                I build fast, accessible websites and web apps with React,
+                TypeScript, and Next.js, so your site feels smooth for visitors
+                and is easy to grow over time.
+              </p>
+            </article>
+            <article class="services-section-card">
+              <p class="services-section-number" aria-hidden="true">02</p>
+              <h3>Design-to-Code Implementation</h3>
+              <p>
+                Already have designs in Figma? I turn them into pixel-accurate,
+                responsive interfaces that look right on every screen and match
+                what your designer intended.
+              </p>
+            </article>
+            <article class="services-section-card">
+              <p class="services-section-number" aria-hidden="true">03</p>
+              <h3>Redesigns &amp; Performance Improvements</h3>
+              <p>
+                If your current site is slow, outdated, or hard to use on
+                mobile, I’ll modernize it, improving load times, accessibility,
+                and usability so visitors stay and take action.
+              </p>
+            </article>
+            <article class="services-section-card">
+              <p class="services-section-number" aria-hidden="true">04</p>
+              <h3>Front-End Support for Teams</h3>
+              <p>
+                Need an extra senior engineer? I can join your team for feature
+                work, code reviews, documentation, or TypeScript migrations,
+                with the experience of having led front-end work at a growing
+                company.
+              </p>
+            </article>
+            <article class="services-section-card">
+              <p class="services-section-number" aria-hidden="true">05</p>
+              <h3>Design Systems &amp; Component Libraries</h3>
+              <p>
+                I create reusable component libraries with Storybook, so your
+                team builds new pages faster and your brand stays consistent as
+                you grow.
+              </p>
+            </article>
+            <article class="services-section-card">
+              <p class="services-section-number" aria-hidden="true">06</p>
+              <h3>Web Apps &amp; Dashboards</h3>
+              <p>
+                From customer portals to data dashboards, I build interactive
+                tools that make complex information clear and easy to use. I can
+                also connect them to your APIs and handle light back-end work
+                when needed.
+              </p>
+            </article>
           </div>
-          <div class="card service">
-            <i class="fas fa-desktop card-icon"></i>
-            <h3 class="h3">Redesigns & Performance Improvements</h3>
-            <p>
-              If your current site is slow, outdated, or hard to use on mobile,
-              I’ll modernize it, improving load times, accessibility, and
-              usability so visitors stay and take action.
-            </p>
-          </div>
-          <div class="card service">
-            <i class="fas fa-desktop card-icon"></i>
-            <h3 class="h3">Web Apps & Dashboards</h3>
-            <p>
-              From customer portals to data dashboards, I build interactive
-              tools that make complex information clear and easy to use. I can
-              also connect them to your APIs and handle light back-end work when
-              needed.
-            </p>
-          </div>
-        </div>
-        <div class="resume-container">
-          <a
-            href="documents/KatieWrennHansen_Resume_6.10.26.pdf"
-            class="resume-download"
-            target="_blank"
-            ><i class="resume-icon far fa-arrow-alt-circle-down"></i
-            ><span>View Resume</span></a
-          >
         </div>
       </section>
 
-      <section class="projects" id="projects">
-        <h2 class="h2">Projects</h2>
-        <div class="underline"></div>
-        <div class="proj-container">
-          <div class="single-proj otusasio">
-            <div class="overlay">
-              <h3 class="h3">Otusasio Tours</h3>
-              <p class="proj-text">
-                Birdwatching tour website built using HTML, CSS and JavaScript.
-              </p>
-              <div class="proj-links">
-                <a class="project-button" href="./projectpages/otusasio.html"
-                  >View Project</a
-                >
-              </div>
-            </div>
+      <section
+        class="projects-showcase"
+        aria-labelledby="projects-showcase-title"
+        id="projects"
+      >
+        <div class="projects-showcase-inner">
+          <div class="projects-showcase-header">
+            <h2 class="h2" id="projects-showcase-title">Projects</h2>
+            <div class="underline"></div>
           </div>
 
-          <div class="single-proj performancecoach">
-            <div class="overlay">
-              <h3 class="h3">The Performance Coach</h3>
-              <p class="proj-text">
-                Personal Training website built using HTML, CSS and JavaScript.
+          <article class="projects-showcase-featured">
+            <a
+              class="projects-showcase-featured-image"
+              href="./projectpages/performanceCoach.html"
+              aria-label="View The Performance Coach project"
+            >
+              <img
+                src="images/performanceCoach.jpg"
+                alt="The Performance Coach website project"
+              />
+            </a>
+            <div class="projects-showcase-featured-content">
+              <p class="projects-showcase-category">
+                Featured / Training / Website
               </p>
-              <div class="proj-links">
+              <h3>The Performance Coach</h3>
+              <p>
+                Website design and development for a personal training business.
+              </p>
+              <a
+                class="projects-showcase-link"
+                href="./projectpages/performanceCoach.html"
+                >View project</a
+              >
+            </div>
+          </article>
+
+          <div class="projects-showcase-grid">
+            <article class="projects-showcase-card">
+              <a
+                class="projects-showcase-card-image"
+                href="./projectpages/otusasio.html"
+                tabindex="-1"
+                aria-hidden="true"
+              >
+                <img src="images/otusasio.jpg" alt="" />
+              </a>
+              <div class="projects-showcase-card-content">
+                <p class="projects-showcase-category">
+                  HTML / CSS / JavaScript
+                </p>
+                <h3>Otusasio Tours</h3>
+                <p>Birdwatching tour website.</p>
                 <a
-                  class="project-button"
-                  href="./projectpages/performanceCoach.html"
-                  >View Project</a
+                  class="projects-showcase-link"
+                  href="./projectpages/otusasio.html"
+                  >View project</a
                 >
               </div>
-            </div>
-          </div>
-          <div class="single-proj energyassistance">
-            <div class="overlay">
-              <h3 class="h3">Energy Assistance Dashboard</h3>
-              <p class="proj-text">
-                Application for visualizing energy needs data in Colorado.
-              </p>
-              <div class="proj-links">
+            </article>
+
+            <article class="projects-showcase-card">
+              <a
+                class="projects-showcase-card-image"
+                href="./projectpages/usmodernist.html"
+                tabindex="-1"
+                aria-hidden="true"
+              >
+                <img src="images/usmodernist.png" alt="" />
+              </a>
+              <div class="projects-showcase-card-content">
+                <p class="projects-showcase-category">
+                  Featured / Redesign / GIS
+                </p>
+                <h3>USModernist / NCModernist</h3>
+                <p>
+                  Website redesign and GIS development for a Modernist
+                  architecture archive.
+                </p>
                 <a
-                  class="project-button"
+                  class="projects-showcase-link"
+                  href="./projectpages/usmodernist.html"
+                  >View project</a
+                >
+              </div>
+            </article>
+
+            <article class="projects-showcase-card">
+              <a
+                class="projects-showcase-card-image"
+                href="./projectpages/energyassistance.html"
+                tabindex="-1"
+                aria-hidden="true"
+              >
+                <img src="images/energyassistance.png" alt="" />
+              </a>
+              <div class="projects-showcase-card-content">
+                <p class="projects-showcase-category">Data visualization</p>
+                <h3>Energy Assistance Dashboard</h3>
+                <p>
+                  Application for visualizing energy needs data in Colorado.
+                </p>
+                <a
+                  class="projects-showcase-link"
                   href="./projectpages/energyassistance.html"
-                  >View Project</a
+                  >View project</a
                 >
               </div>
-            </div>
-          </div>
-          <div class="single-proj jakeorndorff">
-            <div class="overlay">
-              <h3 class="h3">Jake Orndorff</h3>
-              <p class="proj-text">
-                Personal Training website and blog built using HTML, CSS and
-                Wordpress.
-              </p>
-              <div class="proj-links">
+            </article>
+
+            <article class="projects-showcase-card">
+              <a
+                class="projects-showcase-card-image"
+                href="./projectpages/jakeorndorff.html"
+                tabindex="-1"
+                aria-hidden="true"
+              >
+                <img src="images/jakeorndorff.png" alt="" />
+              </a>
+              <div class="projects-showcase-card-content">
+                <p class="projects-showcase-category">HTML / CSS / WordPress</p>
+                <h3>Jake Orndorff</h3>
+                <p>Personal training website and blog.</p>
                 <a
-                  class="project-button"
+                  class="projects-showcase-link"
                   href="./projectpages/jakeorndorff.html"
-                  >View Project</a
+                  >View project</a
                 >
               </div>
-            </div>
-          </div>
-          <div class="single-proj usmodernist">
-            <div class="overlay">
-              <h3 class="h3">USModernist / NCModernist</h3>
-              <p class="proj-text">
-                Website redesign and GIS development for Modernist Architechture
-                Archive.
-              </p>
-              <div class="proj-links">
-                <a class="project-button" href="./projectpages/usmodernist.html"
-                  >View Project</a
+            </article>
+
+            <article class="projects-showcase-card">
+              <a
+                class="projects-showcase-card-image"
+                href="./projectpages/hawsphoto.html"
+                tabindex="-1"
+                aria-hidden="true"
+              >
+                <img src="images/hawsphoto.png" alt="" />
+              </a>
+              <div class="projects-showcase-card-content">
+                <p class="projects-showcase-category">
+                  HTML / CSS / JavaScript
+                </p>
+                <h3>Haws Photography</h3>
+                <p>Photography website.</p>
+                <a
+                  class="projects-showcase-link"
+                  href="./projectpages/hawsphoto.html"
+                  >View project</a
                 >
               </div>
-            </div>
-          </div>
-          <div class="single-proj hawsphoto">
-            <div class="overlay">
-              <h3 class="h3">Haws Photography</h3>
-              <p class="proj-text">
-                Photography website built using HTML, CSS and JavaScript
-              </p>
-              <div class="proj-links">
-                <a class="project-button" href="./projectpages/hawsphoto.html"
-                  >View Project</a
+            </article>
+
+            <article class="projects-showcase-card">
+              <a
+                class="projects-showcase-card-image"
+                href="./projectpages/crm.html"
+                tabindex="-1"
+                aria-hidden="true"
+              >
+                <img src="images/crm-properties.png" alt="" />
+              </a>
+              <div class="projects-showcase-card-content">
+                <p class="projects-showcase-category">Front-end / CRM</p>
+                <h3>Vespa App</h3>
+                <p>Front-end for a customer relationship management app.</p>
+                <a class="projects-showcase-link" href="./projectpages/crm.html"
+                  >View project</a
                 >
               </div>
-            </div>
-          </div>
-          <div class="single-proj vespa">
-            <div class="overlay">
-              <h3 class="h3">Vespa App</h3>
-              <p class="proj-text">
-                Front-End for Customer Relationship Management application.
-              </p>
-              <div class="proj-links">
-                <a class="project-button" href="./projectpages/crm.html"
-                  >View Project</a
-                >
-              </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
@@ -294,29 +381,6 @@
                   reading, or traveling to all corners of the world.
                 </p>
                 <p>Have an idea? I’d love to hear about it.</p>
-                <!-- <p>
-                  I believe that each individual should have the opportunity to
-                  express their unique ideas. It is my mission to contribute to
-                  a world where these ideas are accessible to everyone by
-                  showcasing them as elegant, yet functional web pages. I am
-                  here to help build a platform through which your ideas can be
-                  shared with the world.
-                </p>
-                <p>
-                  I gravitated towards software development after realizing its
-                  perfect union of problem solving and visual creativity. Those
-                  were two skills I rarely exercised in my previous career, and
-                  I enjoyed the challenge of the task. Nothing is more
-                  satisfying than the ‘ah-ha’ moment you get after solving a
-                  complex problem, or bringing an idea to life.
-                </p>
-                <p>
-                  As a self taught developer, there is still much I want to
-                  learn and I enjoy every day spent learning new skills and
-                  building projects. When I am not coding or working on
-                  projects, you can find me running, baking, reading or
-                  traveling to all corners of the world.
-                </p> -->
               </div>
             </div>
           </div>

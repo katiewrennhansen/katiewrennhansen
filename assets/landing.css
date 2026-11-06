@@ -1,8 +1,7 @@
 .home-page {
   line-height: 1.3;
   color: white;
-  background:
-    -webkit-gradient(
+  background: -webkit-gradient(
       linear,
       left top,
       right top,
@@ -10,11 +9,9 @@
       to(rgba(0, 0, 0, 0.6))
     ),
     url("../images/cover.jpg");
-  background:
-    -o-linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/cover.jpg");
-  background:
-    linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/cover.jpg");
   background-position: bottom right;
   height: 115vh;
