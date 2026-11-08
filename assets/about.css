@@ -9,7 +9,6 @@
 .about-container {
   width: 90%;
   margin: 0 auto;
-  padding-bottom: 50px;
 }
 
 .image {
@@ -26,8 +25,6 @@
 .about-content {
   text-align: left;
   line-height: 1.5;
-  font-size: 18px;
-  padding-top: 40px;
 }
 
 .about-content p {
@@ -47,11 +44,12 @@
 }
 
 @media (min-width: 1200px) {
-  .about-container {
-    margin: 0 auto;
-    width: 80%;
+  .about {
+    margin-top: 40px;
   }
-  .about-content {
+  .about-container {
+    margin: 40px auto;
+    width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -59,8 +57,14 @@
     -ms-flex-align: start;
     align-items: flex-start;
   }
+  .about-content {
+    padding-top: 0;
+    font-size: 18px;
+  }
   .about-content img {
     width: 40%;
+  }
+  .image {
     margin: 0;
   }
   .about-content p {

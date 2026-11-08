@@ -40,11 +40,14 @@
   align-items: center;
   justify-content: center;
   padding: 0 28px;
-  border-radius: 8px;
+  border-radius: 999px;
   background: #03cc85;
   color: #0b0f0e;
   text-decoration: none;
   font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+
   transition:
     background-color 160ms ease,
     transform 160ms ease;

@@ -10,17 +10,10 @@ INDIVIDUAL PROJECTS
   margin-bottom: 150px;
 }
 
-#proj-h1 {
+.single-project h1 {
   font-size: 45px;
   text-align: center;
   padding-top: 18vh;
-}
-
-.proj-underline {
-  background-color: #03cc85;
-  height: 6px;
-  width: 80px;
-  margin: 2px auto;
 }
 
 .project-info {
