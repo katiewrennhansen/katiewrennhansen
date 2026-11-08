@@ -302,3 +302,30 @@ h2 {
     opacity: 1;
   }
 }
+
+/*==============*/
+/*COLORS */
+/*==============*/
+.green {
+  color: #03cc85;
+}
+
+.hover-green {
+  color: #32dda2;
+}
+
+.white {
+  color: white;
+}
+
+.dark-green {
+  color: #0b0f0e;
+}
+
+.dark-gray {
+  color: #2a3330;
+}
+
+.light-gray {
+  color: #f5f5f5;
+}
