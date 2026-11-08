@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-147973097-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-147973097-1");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Katie Hansen | Otusasio Tours</title>
+    <meta
+      name="description"
+      content="Portfolio website for web developer Katie Hansen"
+    />
+    <meta
+      name="ketwords"
+      content="Developer, Web Developer, Katie, Katie Hansen, Katie Wrenn, Katie Wrenn Hansen, Software Developer, Websites, Front-End Developer, Front End Developer, Full Stack Developer"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="../images/Logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700|Arizonia|Oswald:400,500|Source+Sans+3:200,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/general.css" />
+    <link rel="stylesheet" href="../assets/project.css" />
+    <link rel="stylesheet" href="../assets/contact.css" />
+  </head>
+  <body class="body">
+    <header>
+      <nav class="nav" id="nav">
+        <a class="logo" id="logo" href="../index.html#home"
+          >Katie<span class="green">Hansen</span></a
+        >
+        <button class="nav-button" aria-label="navigation toggle">
+          <div id="bb-one" class="burger-bar"></div>
+          <div id="bb-two" class="burger-bar"></div>
+          <div id="bb-three" class="burger-bar"></div>
+        </button>
+        <div class="collapse-content" id="navbar">
+          <ul class="ul">
+            <li class="nav-link">
+              <a href="../index.html">Home</a>
+              <div class="nav-divider"></div>
+            </li>
+            <li class="nav-link">
+              <a href="../index.html#about">About</a>
+              <div class="nav-divider"></div>
+            </li>
+            <li class="nav-link">
+              <a href="../index.html#services">Skills</a>
+              <div class="nav-divider"></div>
+            </li>
+            <li class="nav-link">
+              <a href="../index.html#projects">Projects</a>
+              <div class="nav-divider"></div>
+            </li>
+            <li class="nav-link">
+              <a href="../index.html#contact">Contact</a>
+              <div class="nav-divider"></div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="home-page single-project" id="home-page">
+        <h1>Otusasio Tours</h1>
+        <div class="underline"></div>
+      </section>
+    </header>
+
+    <main class="project-page" role="main">
+      <div class="single-project-image-container">
+        <img
+          class="single-project-image"
+          src="../images/otusasio-banner.png"
+          alt="Otusasio Tours landing page"
+        />
+      </div>
+
+      <div class="project-page__content-wrap">
+        <div class="project-page__content">
+          <div class="project-page__main">
+            <section class="project-page__section">
+              <h2>Overview</h2>
+              <p>
+                Otusasio Tours leads birdwatching trips to destinations around
+                the world. The client already had a website, but he wanted
+                something fresher, with a simple, responsive design that would
+                help him promote upcoming tours and share more about his trips
+                and his business. He also hoped the new site would become a home
+                for his own photography, with images from his travels at the
+                center of the experience.
+              </p>
+            </section>
+
+            <section class="project-page__section">
+              <h2>The challenge</h2>
+              <p>
+                His photos were the heart of what he wanted to share, so the
+                site needed to do more than show a few pictures. Images had to
+                appear across every page, and each past trip needed its own
+                gallery. At the same time, visitors still had to find upcoming
+                tours quickly, read the details of each trip, and have just as
+                smooth an experience on a phone as on a desktop.
+              </p>
+            </section>
+
+            <section class="project-page__section">
+              <h2>Design first</h2>
+              <p>
+                Before writing any code, I designed a detailed mockup of every
+                page in Adobe XD. Because the images mattered most to the
+                client, I made sure each page showcased a variety of them, and I
+                chose a more natural palette of greens and grays that suits a
+                nature-focused business. The design was fully responsive, so it
+                worked on mobile as well as desktop. Once the client reviewed
+                and approved it, I moved on to the build.
+              </p>
+            </section>
+
+            <section class="project-page__section">
+              <h2>What I built</h2>
+              <p>
+                I built every page as a static site using HTML, CSS, and
+                JavaScript. A new page lets visitors browse all of the tours and
+                click into any trip to see a summary, the dates, the trip
+                leader, and the full itinerary. Each trip also includes a map of
+                every location visited, which I created as a custom map in
+                Google Maps and embedded into the page. The past trips page
+                shows each trip as a card that links to its own page, with a
+                photo gallery and a complete checklist for that trip. This gives
+                the client a place to show off his photography and gives
+                visitors a real sense of what a tour is like. To keep the site
+                easy to maintain, the footer lists the first six upcoming trips,
+                generated from a JavaScript object that stores each trip's name
+                and link. Updating the list means editing that one object
+                instead of changing every page.
+              </p>
+            </section>
+          </div>
+
+          <aside class="project-page__aside">
+            <h3>Project details</h3>
+            <div class="underline-xs"></div>
+
+            <div class="project-page__meta-block">
+              <h4>Client</h4>
+              <p>Bird watching tour leader</p>
+            </div>
+
+            <div class="project-page__meta-block border">
+              <h4>My role</h4>
+              <p>Design and front-end development</p>
+            </div>
+
+            <div class="project-page__meta-block border">
+              <h4>Status</h4>
+              <p>Archived · demo available</p>
+            </div>
+
+            <div
+              class="project-page__meta-block project-page__meta-block--pills border"
+            >
+              <h4>Built with</h4>
+              <div class="project-page__tags">
+                <span>Adobe XD</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Google Maps</span>
+              </div>
+            </div>
+
+            <div class="project-page__aside-actions">
+              <a
+                href="https://katiewrennhansen.github.io/otusasio/"
+                target="_blank"
+                >View demo site</a
+              >
+              <a
+                href="https://github.com/katiewrennhansen/otusasio"
+                target="_blank"
+                >GitHub repo</a
+              >
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <footer class="contact" id="contact">
+        <h2>Contact</h2>
+        <div class="underline"></div>
+        <div class="contact-container">
+          <p>Let's build something together!</p>
+          <p class="email">
+            <a href="mailto:katiewrennhansen@gmail.com"
+              >katiewrennhansen@gmail.com</a
+            >
+          </p>
+          <div class="icons">
+            <a href="mailto:katiewrennhansen@gmail.com"
+              ><i class="fas fa-envelope icon-link"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/katiewrennhansen"
+              rel="noreferrer"
+              target="_blank"
+              aria-label="link to Katie Hansen's LinkedIn"
+              ><i class="fab fa-linkedin icon-link"></i
+            ></a>
+            <a
+              href="https://github.com/katiewrennhansen"
+              rel="noreferrer"
+              target="_blank"
+              aria-label="link to Katie Hansen's GitHub"
+              ><i class="fab fa-github icon-link"></i
+            ></a>
+          </div>
+          <p class="website">www.katiewrennhansen.com</p>
+        </div>
+      </footer>
+    </main>
+
+    <script type="text/javascript" src="../index.js"></script>
+  </body>
+</html>
