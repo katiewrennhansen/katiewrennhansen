@@ -1,0 +1,356 @@
+.resume-page {
+  color: #0b0f0e;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.resume-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+  gap: 56px;
+  align-items: start;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 56px 96px;
+  background: #fff;
+}
+
+.resume-sidebar {
+  position: relative;
+  min-width: 0;
+  padding: 36px 32px 32px;
+  overflow: hidden;
+  background: #050908;
+  color: #fff;
+  border-radius: 12px;
+}
+
+.resume-profile {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #2a3330;
+}
+
+.resume-profile-name {
+  margin: 0;
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.resume-profile-role {
+  margin: 6px 0 0;
+  color: #5dc88b;
+  font-family: Oswald, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.resume-profile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 16px;
+}
+
+.resume-profile-links a {
+  width: fit-content;
+  color: #c9d1ce;
+  font-size: 15px;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.resume-profile-links a:hover,
+.resume-profile-links a:focus-visible {
+  color: #5dc88b;
+}
+
+.resume-sidebar-mark {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 110px;
+  height: 110px;
+  background: #5dc88b;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  opacity: 0.9;
+}
+
+.resume-sidebar h2 {
+  margin: 0;
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.resume-sidebar h3 {
+  margin: 24px 0 0;
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.resume-skill-group {
+  padding: 16px 0;
+}
+
+.resume-skill-group h3,
+.resume-education h3 {
+  margin: 0 0 10px;
+  color: #9fb0aa;
+  font-family: Oswald, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.resume-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resume-tags li {
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  font-size: 14px;
+}
+
+.resume-role-list {
+  list-style: disc;
+}
+
+.resume-education {
+  padding: 18px 0 0;
+  border-top: 1px solid #2a3330;
+}
+
+.resume-sidebar h2 {
+  margin: 0 0 6px;
+  font-size: 24px;
+}
+
+.resume-education h3 {
+  margin: 0;
+  color: #fff;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.resume-education p {
+  margin: 4px 0 0;
+  color: #c9d1ce;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.resume-download {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+  padding: 0 20px;
+  border: 2px solid #5dc88b;
+  background: #03cc85;
+  color: #0b0f0e;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 999px;
+}
+
+.resume-download:hover,
+.resume-download:focus-visible {
+  background: #32dda2;
+}
+
+.resume-availability {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 28px 0 0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.resume-availability::before {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #5dc88b;
+  content: "";
+}
+
+.resume-main {
+  min-width: 0;
+  padding-top: 6px;
+}
+
+.resume-section + .resume-section {
+  margin-top: 20px;
+}
+
+.resume-section > h2 {
+  margin: 0;
+  color: #0b0f0e;
+  font-family: Oswald, sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.resume-underline {
+  width: 56px;
+  height: 8px;
+  margin: 12px 0 24px;
+  background: #5dc88b;
+}
+
+.resume-underline-sm {
+  width: 36px;
+  height: 6px;
+  margin: 8px 0 16px;
+  background: #5dc88b;
+}
+
+.resume-role {
+  padding: 20px 0 22px;
+  border-top: 1px solid #d6d3d6;
+}
+
+.resume-role-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2px 16px;
+}
+
+.resume-role-heading h3 {
+  margin: 0;
+  color: #0b0f0e;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.resume-company {
+  margin: 6px 0 0;
+  color: #2a3330;
+  font-family: Oswald, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.resume-dates {
+  margin: 0;
+  color: #3b4643;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.resume-role ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding-left: 22px;
+}
+
+.resume-role li {
+  padding-left: 2px;
+  color: #2a3330;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.resume-volunteer .resume-company {
+  margin: 0 0 12px;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+@media (max-width: 900px) {
+  .resume-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+    padding: 24px 24px 72px;
+  }
+
+  .resume-sidebar {
+    max-width: none;
+    padding-bottom: 44px;
+  }
+}
+
+@media (max-width: 600px) {
+  .resume-layout {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .resume-sidebar {
+    padding: 32px 24px 40px;
+  }
+
+  .resume-section > h2 {
+    font-size: 32px;
+  }
+
+  .resume-role-heading {
+    flex-direction: column;
+  }
+}
+
+@media print {
+  .resume-download,
+  .resume-availability {
+    display: none !important;
+  }
+
+  .resume-layout {
+    grid-template-columns: 280px 1fr;
+    gap: 28px;
+    padding: 24px;
+  }
+
+  .resume-role {
+    break-inside: avoid;
+  }
+}
