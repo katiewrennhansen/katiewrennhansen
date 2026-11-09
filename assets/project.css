@@ -5,6 +5,10 @@ header {
   background-color: #fff;
 }
 
+.single-project h1 {
+  font-size: 36px;
+}
+
 h4 {
   font-size: 16px;
   font-weight: 500;
@@ -197,6 +201,13 @@ h3 {
 .project-page__aside-actions a:last-child {
   color: #0b0f0e;
   border: 2px solid #0b0f0e;
+}
+
+.project-page__aside-note {
+  margin: 8px 0 0;
+  color: #5a6a65;
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 .contact h2 {
@@ -448,7 +459,15 @@ h3 {
   margin-top: -70px;
 }
 
+.force-white {
+  color: #fff !important;
+}
+
 @media (min-width: 768px) {
+  .single-project h1 {
+    font-size: 72px !important;
+  }
+
   .single-project-image-container {
     margin: 0 64px;
   }

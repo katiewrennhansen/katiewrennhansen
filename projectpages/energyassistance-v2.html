@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-147973097-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-147973097-1");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Katie Hansen | Energy Assistance Dashboard</title>
+    <meta
+      name="description"
+      content="A case study of a data visualization dashboard for energy assistance in Colorado."
+    />
+    <meta
+      name="keywords"
+      content="Energy Assistance, Colorado, Code for Denver, Data Visualization, Next.js, Portfolio, Katie Hansen"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="../images/Logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700|Arizonia|Oswald:400,500|Source+Sans+3:200,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/general.css" />
+    <link rel="stylesheet" href="../assets/project.css" />
+    <link rel="stylesheet" href="../assets/contact.css" />
+  </head>
+  <body class="body">
+    <header>
+      <nav class="nav" id="nav">
+        <a class="logo" id="logo" href="../index.html#home"
+          >Katie<span class="green">Hansen</span></a
+        >
+        <button class="nav-button" aria-label="navigation toggle">
+          <div id="bb-one" class="burger-bar"></div>
+          <div id="bb-two" class="burger-bar"></div>
+          <div id="bb-three" class="burger-bar"></div>
+        </button>
+        <div class="collapse-content" id="navbar">
+          <ul class="ul">
+            <li class="nav-link">
+              <a href="../index.html">Home</a>
+              <div class="nav-divider"></div>
+            </li>
+            <li class="nav-link">
+              <a href="../index.html#about">About</a>
+              <div class="nav-divider"></div>
+            </li>
+            <li class="nav-link">
+              <a href="../index.html#services">Skills</a>
+              <div class="nav-divider"></div>
+            </li>
+            <li class="nav-link">
+              <a href="../index.html#projects">Projects</a>
+              <div class="nav-divider"></div>
+            </li>
+            <li class="nav-link">
+              <a href="../index.html#contact">Contact</a>
+              <div class="nav-divider"></div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="home-page single-project" id="home-page">
+        <h1>Energy Assistance Dashboard</h1>
+        <div class="underline"></div>
+      </section>
+    </header>
+
+    <main class="project-page" role="main">
+      <div class="single-project-image-container">
+        <img
+          class="single-project-image"
+          src="../images/energyassistance-banner.png"
+          alt="Energy Assistance in Colorado dashboard home page"
+        />
+      </div>
+
+      <div class="project-page__content-wrap">
+        <div class="project-page__content">
+          <div class="project-page__main">
+            <section class="project-page__section">
+              <h2>Overview</h2>
+              <p>
+                In Colorado, thousands of families can’t afford to pay their
+                energy bills. Energy Outreach Colorado provides low-income
+                energy assistance and wanted a way for people to see how that
+                help is distributed, both in their own county and across the
+                state. The goal was a single-page web application for
+                visualizing and tracking that data. The project was completed by
+                a small team of developers and designers within Code for Denver,
+                a volunteer civic tech organization dedicated to building
+                software for local governments and nonprofits.
+              </p>
+            </section>
+
+            <section class="project-page__section">
+              <h2>The challenge</h2>
+              <p>
+                The data covered every county in Colorado across a decade, from
+                2010 to 2019. It needed to be easy to explore for anyone, from
+                community members looking for help to people tracking trends in
+                need, and available on a phone as well as a computer.
+              </p>
+            </section>
+
+            <section class="project-page__section">
+              <h2>Working with a team</h2>
+              <p>
+                I served as one of the primary front-end developers on a
+                volunteer team that included other developers and a UX designer.
+                The designer created the designs in Figma, and I implemented
+                them in code, working alongside the rest of the team to build
+                out the application.
+              </p>
+            </section>
+
+            <section class="project-page__section">
+              <h2>What I built</h2>
+              <p>
+                I was responsible for building a large portion of the Next.js
+                application. For the data, I used react-vis, a data
+                visualization library built on top of React, to create
+                dynamically updated visualizations that showcase trends in
+                energy assistance needs for each county between 2010 and 2019. I
+                also implemented a responsive design so that all of the data
+                could be accessed comfortably on mobile devices, not just on
+                desktop.
+              </p>
+            </section>
+          </div>
+
+          <aside class="project-page__aside">
+            <h3>Project details</h3>
+            <div class="underline-xs"></div>
+
+            <div class="project-page__meta-block">
+              <h4>Client</h4>
+              <p>Energy Outreach Colorado, through Code for Denver</p>
+            </div>
+
+            <div class="project-page__meta-block border">
+              <h4>My role</h4>
+              <p>Primary front-end developer</p>
+            </div>
+
+            <div class="project-page__meta-block border">
+              <h4>Status</h4>
+              <p>Live · data no longer loaded</p>
+            </div>
+
+            <div
+              class="project-page__meta-block project-page__meta-block--pills border"
+            >
+              <h4>Built with</h4>
+              <div class="project-page__tags">
+                <span>Figma</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Next.js</span>
+                <span>react-vis</span>
+              </div>
+            </div>
+
+            <div class="project-page__aside-actions">
+              <a
+                href="https://energy-assistance-dashboard.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+                >Visit site</a
+              >
+              <a
+                href="https://github.com/codefordenver/energy-assistance-dashboard"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub repo</a
+              >
+            </div>
+            <p class="project-page__aside-note">
+              The site is still live, but no current data is loaded, so the data
+              visualizations can’t be viewed right now.
+            </p>
+          </aside>
+        </div>
+      </div>
+
+      <footer class="contact" id="contact">
+        <h2>Contact</h2>
+        <div class="underline"></div>
+        <div class="contact-container">
+          <p>Let's build something together!</p>
+          <p class="email">
+            <a href="mailto:katiewrennhansen@gmail.com"
+              >katiewrennhansen@gmail.com</a
+            >
+          </p>
+          <div class="icons">
+            <a href="mailto:katiewrennhansen@gmail.com"
+              ><i class="fas fa-envelope icon-link"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/katiewrennhansen"
+              rel="noreferrer"
+              target="_blank"
+              aria-label="link to Katie Hansen's LinkedIn"
+              ><i class="fab fa-linkedin icon-link"></i
+            ></a>
+            <a
+              href="https://github.com/katiewrennhansen"
+              rel="noreferrer"
+              target="_blank"
+              aria-label="link to Katie Hansen's GitHub"
+              ><i class="fab fa-github icon-link"></i
+            ></a>
+          </div>
+          <p class="website">www.katiewrennhansen.com</p>
+        </div>
+      </footer>
+    </main>
+
+    <script type="text/javascript" src="../index.js"></script>
+  </body>
+</html>
