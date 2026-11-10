@@ -102,8 +102,8 @@ h2 {
 
 .logo {
   position: absolute;
-  top: 13px;
-  left: 14px;
+  top: 12px;
+  left: 26px;
   font-size: 35px;
   font-family: "Arizonia";
   color: white;
@@ -155,8 +155,7 @@ h2 {
 .collapse-content {
   height: 0;
   background: #0a160f;
-  padding: 0 20px 0;
-  transition-duration: 400ms;
+  padding: 0 30px;
   opacity: 0;
   overflow: hidden;
   margin-top: 55px;
@@ -173,7 +172,7 @@ h2 {
 }
 
 .collapse-content ul {
-  padding: 40px 0 0 0;
+  padding: 30px 0 0 0;
 }
 
 .collapse-content li {
@@ -193,7 +192,7 @@ h2 {
 
 .nav-divider {
   width: 6vw;
-  margin: 10px auto 50px;
+  margin: 4px auto 40px;
   height: 4px;
   background-color: #03cc85;
 }
@@ -218,11 +217,11 @@ h2 {
     display: flex;
   }
   .nav {
-    height: 80px;
+    height: 70px;
   }
   .logo {
     font-size: 40px;
-    padding: 5px 0 0 5px;
+    top: 14px;
   }
   .collapse-content {
     display: -webkit-box;
@@ -242,6 +241,12 @@ h2 {
     background-color: rgba(255, 255, 255, 0);
     font-family: "Source Sans 3", sans-serif;
   }
+  .collapse-content ul {
+    gap: 20px;
+  }
+  .collapse-content li {
+    padding: 0;
+  }
   .nav-divider {
     width: 0;
     height: 3px;
@@ -258,9 +263,6 @@ h2 {
   }
   .collapse-content a {
     font-size: 16px;
-  }
-  .collapse-content li {
-    padding: 0 24px 0 0;
   }
 }
 @media (min-width: 1200px) {
@@ -282,7 +284,10 @@ h2 {
     margin-top: 5px;
   }
   .logo {
-    padding: 10px 0 0 20px;
+    top: 18px;
+  }
+  .nav {
+    height: 80px;
   }
   .collapse-content a {
     font-size: 18px;
