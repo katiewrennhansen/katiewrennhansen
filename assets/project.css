@@ -48,7 +48,7 @@ h3 {
   max-width: 1152px;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid #d9e1dd;
+  border: 1px solid #c5d0cb;
   border-radius: 12px;
 }
 
@@ -108,7 +108,7 @@ h3 {
   display: flex;
   flex-direction: column;
   background: #f5f5f5;
-  border: 1px solid #d9e1dd;
+  border: 1px solid #c5d0cb;
   border-radius: 12px;
   padding: 28px;
 }
@@ -121,7 +121,7 @@ h3 {
 }
 
 .project-page__meta-block.border {
-  border-top: 1px solid #d9e1dd;
+  border-top: 1px solid #c5d0cb;
 }
 
 .project-page__meta-block span {
@@ -135,7 +135,7 @@ h3 {
 
 .project-page__meta-block p {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   color: #0b0f0e;
   line-height: 1.3;
 }
@@ -312,7 +312,7 @@ h3 {
 }
 
 .project-page__mockup--after {
-  background: #1a2220;
+  background: #0a160f;
 }
 
 .project-page__mobile-flex {
@@ -323,7 +323,7 @@ h3 {
 
 .project-page__mobile-card {
   background: #fff;
-  border: 1px solid #d9e1dd;
+  border: 1px solid #c5d0cb;
   border-radius: 12px;
   padding: 28px;
   display: flex;
@@ -361,7 +361,7 @@ h3 {
 }
 
 .project-page__phone--after {
-  background: #1a2220;
+  background: #0a160f;
   color: #c9d1ce;
 }
 
@@ -448,7 +448,7 @@ h3 {
   }
 
   .project-page__section p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .project-page__aside {
