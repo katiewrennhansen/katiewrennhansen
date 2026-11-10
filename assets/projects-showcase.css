@@ -1,7 +1,7 @@
 .projects-showcase {
   padding: 72px 20px;
-  background: #0b0f0e;
-  color: #fff;
+  background: var(--color-text-primary);
+  color: var(--color-white);
   font-family: "Source Sans 3", sans-serif;
   text-align: left;
 }
@@ -19,7 +19,7 @@
 }
 
 .projects-showcase-header h2 {
-  color: #fff;
+  color: var(--color-white);
   font-size: 40px;
 }
 
@@ -29,7 +29,7 @@
 
 .projects-showcase-category {
   margin: 0;
-  color: #03cc85;
+  color: var(--color-green);
   font-family: Oswald, sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -40,9 +40,9 @@
 .projects-showcase-featured,
 .projects-showcase-card {
   overflow: hidden;
-  border: 1px solid #2a3330;
+  border: 1px solid var(--color-text-secondary);
   border-radius: 8px;
-  background: #0b0f0e;
+  background: var(--color-text-primary);
 }
 
 .projects-showcase-featured {
@@ -55,7 +55,7 @@
   flex: 1 1 100%;
   min-height: 0;
   aspect-ratio: 16 / 10;
-  background: #0b0f0e;
+  background: var(--color-text-primary);
 }
 
 .projects-showcase-featured-image img,
@@ -84,14 +84,14 @@
 
 .projects-showcase-featured-content h3,
 .projects-showcase-card-content h3 {
-  color: #fff !important;
+  color: var(--color-white) !important;
 }
 
 .projects-showcase-link {
   display: inline-flex;
   min-height: 44px;
   align-items: center;
-  color: #03cc85;
+  color: var(--color-green);
   font-family: Oswald, sans-serif;
   font-size: 15px;
   font-weight: 500;
@@ -124,7 +124,7 @@
 .projects-showcase-card-image {
   display: block;
   height: 190px;
-  background: #0b0f0e;
+  background: var(--color-text-primary);
 }
 
 .projects-showcase-card-content {

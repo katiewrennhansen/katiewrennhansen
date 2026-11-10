@@ -1,18 +1,23 @@
 .contact {
-  background:
-    -webkit-gradient(
+  background: -webkit-gradient(
       linear,
       left top,
       right top,
-      from(rgba(0, 0, 0, 0.78)),
-      to(rgba(0, 0, 0, 0.78))
+      from(var(--color-contact-overlay)),
+      to(var(--color-contact-overlay))
     ),
     url("../images/forest.jpg");
-  background:
-    -o-linear-gradient(left, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)),
+  background: -o-linear-gradient(
+      left,
+      var(--color-contact-overlay),
+      var(--color-contact-overlay)
+    ),
     url("../images/forest.jpg");
-  background:
-    linear-gradient(to right, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)),
+  background: linear-gradient(
+      to right,
+      var(--color-contact-overlay),
+      var(--color-contact-overlay)
+    ),
     url("../images/forest.jpg");
   background-position: center;
   background-size: cover;
@@ -20,12 +25,12 @@
   -webkit-clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 100%);
   padding-bottom: 50px;
-  color: white;
+  color: var(--color-white);
   font-family: "Source Sans 3", sans-serif;
 }
 
 .contact h2 {
-  color: white;
+  color: var(--color-white);
   padding-top: 200px;
   text-align: center;
 }
@@ -39,13 +44,13 @@
 }
 
 .email a {
-  color: white;
+  color: var(--color-white);
   font-size: 20px;
 }
 
 .email a:hover,
 .email a:focus {
-  color: #03cc85;
+  color: var(--color-green);
   transition: 300ms linear 10ms;
 }
 
@@ -62,11 +67,11 @@
 }
 
 .icon-link {
-  color: white;
+  color: var(--color-white);
 }
 
 .icon-link:hover {
-  color: #03cc85;
+  color: var(--color-green);
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -81,7 +86,7 @@
 }
 
 .website {
-  color: #c9d1ce;
+  color: var(--color-text-tertiary);
   font-size: 12px;
 }
 

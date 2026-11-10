@@ -1,3 +1,4 @@
+@import "colors.css";
 @import "contact.css";
 
 /*==============*/
@@ -16,7 +17,7 @@ html {
 }
 
 .body {
-  background: #f5f5f5;
+  background: var(--color-light-gray);
 }
 
 h1,
@@ -59,21 +60,21 @@ a:hover {
 h2 {
   padding: 5px 0;
   font-size: 35px;
-  color: black;
+  color: var(--color-black);
   letter-spacing: 0.1rem;
 }
 
 .underline {
   width: 40px;
   height: 6px;
-  background-color: #03cc85;
+  background-color: var(--color-green);
   margin: 0 auto;
 }
 
 ::selection,
 ::-moz-selection {
-  background: #03cc85;
-  color: white;
+  background: var(--color-green);
+  color: var(--color-white);
 }
 
 /*==============*/
@@ -92,12 +93,12 @@ h2 {
 }
 
 .nav-background {
-  background-color: #0a160f;
+  background-color: var(--color-dark-green);
   transition-duration: 0s;
 }
 
 .nav-scrolled {
-  background-color: #0a160f;
+  background-color: var(--color-dark-green);
 }
 
 .logo {
@@ -106,16 +107,16 @@ h2 {
   left: 26px;
   font-size: 35px;
   font-family: "Arizonia";
-  color: white;
+  color: var(--color-white);
   z-index: 100;
 }
 
 #logo:hover {
-  color: white;
+  color: var(--color-white);
 }
 
 #logo:focus {
-  color: white;
+  color: var(--color-white);
 }
 
 .nav-button {
@@ -131,7 +132,7 @@ h2 {
 .burger-bar {
   width: 25px;
   height: 2px;
-  background-color: white;
+  background-color: var(--color-white);
   margin: 6px 5px;
   transition-duration: 300ms;
 }
@@ -154,7 +155,7 @@ h2 {
 
 .collapse-content {
   height: 0;
-  background: #0a160f;
+  background: var(--color-dark-green);
   padding: 0 30px;
   opacity: 0;
   overflow: hidden;
@@ -182,19 +183,19 @@ h2 {
 }
 
 .collapse-content a {
-  color: white;
+  color: var(--color-white);
   margin: 50px 0 10px 0;
 }
 
 .nav a:focus {
-  color: #03cc85;
+  color: var(--color-green);
 }
 
 .nav-divider {
   width: 6vw;
   margin: 4px auto 40px;
   height: 4px;
-  background-color: #03cc85;
+  background-color: var(--color-green);
 }
 
 @media (min-width: 768px) {
@@ -238,7 +239,7 @@ h2 {
     transition-duration: 0ms;
     opacity: 1;
     margin: 0;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: var(--color-transparent-white);
     font-family: "Source Sans 3", sans-serif;
   }
   .collapse-content ul {
@@ -306,51 +307,4 @@ h2 {
     transform: translateY(0);
     opacity: 1;
   }
-}
-
-/*==============*/
-/*COLORS */
-/*==============*/
-.green {
-  color: #03cc85;
-}
-
-.hover-green {
-  color: #32dda2;
-}
-
-.dark-green {
-  color: #0a160f;
-}
-
-.white {
-  color: white;
-}
-
-.text-primary {
-  color: #0b0f0e;
-}
-
-.text-secondary {
-  color: #2a3330;
-}
-
-.text-tertiary {
-  color: #c9d1ce;
-}
-
-.text-green {
-  color: #5a6a65;
-}
-
-.light-gray {
-  color: #f5f5f5;
-}
-
-.light-gray-border {
-  color: #c5d0cb;
-}
-
-.light-gray-bg {
-  background-color: #f5f5f5;
 }

@@ -10,7 +10,7 @@
 .disclaimer {
   margin-top: 20px;
   font-size: 14px !important;
-  color: #2a3330;
+  color: var(--color-text-secondary);
 }
 
 @media (min-width: 768px) {

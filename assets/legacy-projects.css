@@ -66,7 +66,7 @@ INDIVIDUAL PROJECTS
 }
 
 .project-info p a {
-  color: #03cc85;
+  color: var(--color-green);
 }
 
 .project-info p,
@@ -106,9 +106,9 @@ INDIVIDUAL PROJECTS
 .sp-button {
   text-transform: uppercase;
   font-weight: 600;
-  border: 2px solid #0a160f;
-  box-shadow: 1px 1px 2px #0a131666;
-  color: #0a160f;
+  border: 2px solid var(--color-dark-green);
+  box-shadow: 1px 1px 2px var(--color-shadow-dark);
+  color: var(--color-dark-green);
   padding: 7px 10px;
   width: 46%;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -121,7 +121,7 @@ INDIVIDUAL PROJECTS
 }
 
 .sp-button:hover {
-  color: #fff;
+  color: var(--color-white);
 }
 
 .sp-button:before {
@@ -132,7 +132,7 @@ INDIVIDUAL PROJECTS
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #0a160f;
+  background-color: var(--color-dark-green);
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -153,7 +153,7 @@ INDIVIDUAL PROJECTS
 .disclaimer {
   margin-top: 20px;
   font-size: 14px !important;
-  color: #2a3330;
+  color: var(--color-text-secondary);
 }
 
 /* =============
@@ -298,9 +298,9 @@ MEDIA QUERIES
   -webkit-transition: 200ms ease-in-out;
   -o-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
-  background-color: #03cc85;
+  background-color: var(--color-green);
   padding: 40px 20px;
-  border: 2px solid #0a160f;
+  border: 2px solid var(--color-dark-green);
 }
 
 #projects .single-proj:hover .overlay {
@@ -313,11 +313,11 @@ MEDIA QUERIES
 
 #projects h3 {
   font-size: 26px;
-  color: #0a160f;
+  color: var(--color-dark-green);
 }
 
 #projects .proj-text {
-  color: #0a160f;
+  color: var(--color-dark-green);
   font-size: 18px;
   padding-bottom: 30px;
   line-height: 1.5;
@@ -335,9 +335,9 @@ MEDIA QUERIES
 #projects .project-button {
   text-transform: uppercase;
   font-weight: 600;
-  border: 2px solid #0a160f;
-  box-shadow: 1px 1px 2px #0a131666;
-  color: #0a160f;
+  border: 2px solid var(--color-dark-green);
+  box-shadow: 1px 1px 2px var(--color-shadow-dark);
+  color: var(--color-dark-green);
   padding: 7px 10px;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -350,7 +350,7 @@ MEDIA QUERIES
 }
 
 #projects .project-button:hover {
-  color: white;
+  color: var(--color-white);
 }
 
 #projects .project-button:before {
@@ -361,7 +361,7 @@ MEDIA QUERIES
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #0a160f;
+  background-color: var(--color-dark-green);
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -380,8 +380,8 @@ MEDIA QUERIES
 }
 
 #projects .project-button:focus {
-  background-color: #0a160f;
-  color: white;
+  background-color: var(--color-dark-green);
+  color: var(--color-white);
 }
 
 @media (min-width: 470px) {
