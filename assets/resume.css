@@ -1,3 +1,7 @@
+.body {
+  background: #fff !important;
+}
+
 .resume-page {
   color: #0b0f0e;
   font-family: "Source Sans 3", sans-serif;
@@ -5,19 +9,19 @@
 
 .resume-layout {
   display: grid;
-  grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
-  gap: 56px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 32px;
   align-items: start;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 24px 56px 96px;
+  padding: 24px 16px 72px;
   background: #fff;
 }
 
 .resume-sidebar {
   position: relative;
   min-width: 0;
-  padding: 36px 32px 32px;
+  padding: 32px 24px 40px;
   overflow: hidden;
   background: #050908;
   color: #fff;
@@ -27,22 +31,11 @@
 .resume-profile {
   margin-bottom: 24px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #2a3330;
-}
-
-.resume-profile-name {
-  margin: 0;
-  color: #fff;
-  font-family: Oswald, sans-serif;
-  font-size: 25px;
-  font-weight: 600;
-  line-height: 1.15;
-  text-transform: uppercase;
 }
 
 .resume-profile-role {
-  margin: 6px 0 0;
-  color: #5dc88b;
+  margin: 12px 0 32px;
+  color: #03cc85;
   font-family: Oswald, sans-serif;
   font-size: 15px;
   font-weight: 500;
@@ -54,7 +47,15 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
-  margin-top: 16px;
+  margin: 18px 0;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #2a3330;
+}
+
+.resume-profile-links-inner {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 
 .resume-profile-links a {
@@ -67,7 +68,7 @@
 
 .resume-profile-links a:hover,
 .resume-profile-links a:focus-visible {
-  color: #5dc88b;
+  color: #03cc85;
 }
 
 .resume-sidebar-mark {
@@ -76,41 +77,34 @@
   bottom: 0;
   width: 110px;
   height: 110px;
-  background: #5dc88b;
+  background: #03cc85;
   clip-path: polygon(0 100%, 100% 0, 100% 100%);
   opacity: 0.9;
 }
 
-.resume-sidebar h2 {
-  margin: 0;
+.resume-sidebar > h2,
+.resume-education h2 {
+  margin: 0 0 6px;
   color: #fff;
-  font-family: Oswald, sans-serif;
-  font-size: 38px;
+  font-size: 26px;
   font-weight: 600;
-  line-height: 1.05;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
 }
 
-.resume-sidebar h3 {
-  margin: 24px 0 0;
+.resume-profile-name {
+  margin: 0 0 6px;
+  padding: 0;
   color: #fff;
-  font-family: Oswald, sans-serif;
-  font-size: 21px;
-  font-weight: 600;
-  line-height: 1.15;
+  font-size: 48px;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
 }
 
 .resume-skill-group {
-  padding: 16px 0;
+  padding: 18px 0;
 }
 
-.resume-skill-group h3,
-.resume-education h3 {
+.resume-skill-group h4 {
   margin: 0 0 10px;
-  color: #9fb0aa;
+  color: #fff;
   font-family: Oswald, sans-serif;
   font-size: 13px;
   font-weight: 500;
@@ -145,13 +139,8 @@
   border-top: 1px solid #2a3330;
 }
 
-.resume-sidebar h2 {
-  margin: 0 0 6px;
-  font-size: 24px;
-}
-
-.resume-education h3 {
-  margin: 0;
+.resume-education h4 {
+  margin: 18px 0 0;
   color: #fff;
   font-family: "Source Sans 3", sans-serif;
   font-size: 18px;
@@ -178,7 +167,6 @@
   gap: 10px;
   margin-top: 24px;
   padding: 0 20px;
-  border: 2px solid #5dc88b;
   background: #03cc85;
   color: #0b0f0e;
   font-weight: 700;
@@ -193,29 +181,8 @@
   background: #32dda2;
 }
 
-.resume-availability {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 28px 0 0;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.resume-availability::before {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #5dc88b;
-  content: "";
-}
-
 .resume-main {
   min-width: 0;
-  padding-top: 6px;
 }
 
 .resume-section + .resume-section {
@@ -224,53 +191,45 @@
 
 .resume-section > h2 {
   margin: 0;
-  color: #0b0f0e;
-  font-family: Oswald, sans-serif;
-  font-size: 38px;
-  font-weight: 600;
-  line-height: 1.08;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
+  padding: 0;
+  font-size: 32px;
+  font-weight: 500;
 }
 
 .resume-underline {
   width: 56px;
   height: 8px;
-  margin: 12px 0 24px;
-  background: #5dc88b;
+  margin: 8px 0;
+  background: #03cc85;
 }
 
 .resume-underline-sm {
   width: 36px;
   height: 6px;
-  margin: 8px 0 16px;
-  background: #5dc88b;
+  margin: 8px 0 0;
+  background: #03cc85;
 }
 
 .resume-role {
-  padding: 20px 0 22px;
-  border-top: 1px solid #d6d3d6;
+  padding: 12px 0;
 }
 
 .resume-role-heading {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2px 16px;
 }
 
 .resume-role-heading h3 {
-  margin: 0;
-  color: #0b0f0e;
-  font-size: 21px;
-  font-weight: 700;
+  margin: 0 0 10px;
+  font-weight: 600;
 }
 
 .resume-company {
   margin: 6px 0 0;
-  color: #2a3330;
   font-family: Oswald, sans-serif;
-  font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -298,49 +257,41 @@
   line-height: 1.55;
 }
 
-.resume-volunteer .resume-company {
-  margin: 0 0 12px;
-  font-size: 17px;
-  font-weight: 700;
-  letter-spacing: 0;
-  text-transform: none;
-}
+@media (min-width: 768px) {
+  .resume-main {
+    padding-top: 42px;
+  }
 
-@media (max-width: 900px) {
   .resume-layout {
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
     gap: 40px;
-    padding: 24px 24px 72px;
+    padding: 40px 32px 72px;
   }
 
   .resume-sidebar {
-    max-width: none;
-    padding-bottom: 44px;
-  }
-}
-
-@media (max-width: 600px) {
-  .resume-layout {
-    padding-right: 16px;
-    padding-left: 16px;
-  }
-
-  .resume-sidebar {
-    padding: 32px 24px 40px;
+    padding: 36px 28px 32px;
+    height: 100%;
   }
 
   .resume-section > h2 {
-    font-size: 32px;
+    font-size: 38px;
   }
 
   .resume-role-heading {
-    flex-direction: column;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .resume-layout {
+    grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+    gap: 56px;
+    padding: 48px 56px 96px;
   }
 }
 
 @media print {
-  .resume-download,
-  .resume-availability {
+  .resume-download {
     display: none !important;
   }
 
