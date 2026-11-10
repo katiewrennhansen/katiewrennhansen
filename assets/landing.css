@@ -36,10 +36,10 @@
 }
 
 .line {
-  height: 6px;
+  height: 8px;
   background-color: #03cc85;
   margin: 2px 0 14px;
-  width: 30%;
+  width: 12%;
 }
 
 @media (min-width: 470px) {
@@ -49,9 +49,6 @@
 }
 
 @media (min-width: 768px) {
-  .line {
-    width: 15%;
-  }
   .home-page h1 {
     font-size: 70px;
   }
