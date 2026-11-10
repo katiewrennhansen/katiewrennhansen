@@ -6,7 +6,8 @@
 .services-section-inner {
   display: flex;
   max-width: 1152px;
-  margin: 120px auto 0;
+  margin: 60px auto 0;
+  padding: 60px 0 0;
   flex-direction: column;
   gap: 48px;
 }
