@@ -73,12 +73,12 @@
 
 .resume-sidebar-mark {
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 0;
-  width: 110px;
-  height: 110px;
+  width: 210px;
+  height: 210px;
   background: #03cc85;
-  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
   opacity: 0.9;
 }
 
